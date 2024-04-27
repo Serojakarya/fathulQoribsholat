@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum-hukum Shalat</a></li>
+    <li><a href="2.html">2. Syarat Orang yang Wajib Shalat</a></li>
+    <li><a href="3.html">3. Syarat Sebelum Masuk Shalat</a></li>
+	<li><a href="4.html">4. Rukun Shalat</a></li>
+	<li><a href="5.html">5. Sunnah Sholat</a></li>
+	<li><a href="6.html">6. Beda Laki-laki dan Perempuan dalam Shalat</a></li>
+	<li><a href="7.html">7. 11 Pembatal Shalat</a></li>
+	<li><a href="8.html">8. Jumlah Rakaat Shalat</a></li>
+	<li><a href="9.html">9. Yang Tertinggal dalam Shalat</a></li>
+	<li><a href="10.html">10. Waktu yang Makruh untuk Shalat</a></li>
+	<li><a href="11.html">11. Shalat Berjamaah</a></li>
+	<li><a href="12.html">12. Shalat Qashar dan Jamak</a></li>
+	<li><a href="13.html">13. Shalat Jumat</a></li>
+	<li><a href="14.html">14. Shalat Idul Fitri dan Idul Adha</a></li>
+	<li><a href="15.html">15. Shalat Gerhana Matahari dan Bulan</a></li>
+	<li><a href="16.html">16. Shalat Istisqa (Minta Hujan)</a></li>
+	<li><a href="17.html">17. Bab Shalat Khauf (Saat Perang)</a></li>
+	<li><a href="18.html">18. Pakaian Sutra dan Cincin Emas</a></li>
+	<li><a href="19.html">19. Jenazah: Cara Memandikan, Mengkafani, Menyolati dan Memendamnya</a></li>
+</ul>
+
+</div>
+
+
+<h1>Waktu Makruh untuk Shalat</h1><br/><br/>
+
+
+	
+
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+فصل: في الأوقات التي تكره الصلاة فيها تحريما كما في الروضة، وشرح المهذب هنا وتنزيهاً كما في التحقيق، وشرح المهذب في نواقض الوضوء
+<br/><br/>
+وخمسة أوقات لا يصلي فيها إلا صلاة لها سبب- إما متقدم كالفائتة أو مقارن كصلاة الكسوف والاستسقاء، فالأول من الخمسة الصلاة التي لا سبب لها إذا فعلت (بعد صلاة الصبح) وتستمر الكراهة (حتى تطلع الشمس و) الثاني الصلاة (عند طلوعها) فإذا طلعت (حتى تتكامل وترتفع قدر رمح) في رأي العين
+<br/><br/>
+و- الثالث الصلاة (إذا استوت حتى تزول) عن وسط السماء ويستثنى من ذلك يوم الجمعة، فلا تكره الصلاة فيه وقت الاستواء. وكذا حرم مكة المسجد وغيره، فلا تكره الصلاة فيه في هذه الأوقات كلها سواء صلى سنة الطواف أو غيرها (و) الرابع من (بعد صلاة العصر حتى تغرب الشمس و) الخامس (عند الغروب) للشمس إذا دنت للغروب (حتى يتكامل غروبها).
+</font></div>
+
+<hr><br/>
+
+
+
+
+<p>Fasal) menjelaskan waktu-waktu yang dimakruhkan melakukan sholat dengan makruh tahrim seperti keterangan di dalam kitab ar Raudlah dan Syarh al Muhadzdzab di dalam bab ini.</p>
+
+<p>Dan makruh tanzih seperti keterangan di dalam kitab at Tahqiq dan Syarh al Muhadzdzab di dalam kitab “Nawaqidul Wudlu’”.</p>
+
+<p>Ada lima waktu yang dimakruhkan melakukan sholat pada waktu itu kecuali sholat yang memiliki sebab</p>
+
+<p>Adakalanya sebab yang terjadi sebelum pelaksanaan sholat seperti sholat fa’itah (sholat yang ditinggalkan). Atau sebab yang berbarengan dengan pelaksanaan sholat seperti sholat gerhana dan sholat istisqa’.</p><br/>
+
+<b><center>Shalat Setelah Subuh sampai Matahari Terbit</b></center>
+
+<p>Yang pertama dari lima waktu tersebut adalah sholat yang tidak memiliki sebab ketika dikerjakan setelah sholat Subuh. Dan hukum makruh tersebut tetap ada hingga terbitnya matahari.</p><br/>
+
+<b><center>Shalat Saat Matahari Terbit</b></center>
+
+<p>Yang kedua adalah melaksanakan sholat ketika terbitnya matahari hingga keluar secara sempurna dan naik kira-kira setinggi satu tombak sesuai dengan pandangan mata.</p><br/>
+
+<b><center>Shalat Saat Istiwa' (Matahari Di Tengah Langit)</b></center>
+
+<p>Yang ketiga adalah mengerjakan sholat ketika matahari tepat di tengah-tengah langit hingga bergeser dari tengah-tengah langit.</p>
+
+<p>Dari semua itu dikecualikan hari Jum’at, maka tidak di makruhkan melaksanakan sholat di hari Jum’at tepat pada waktu istiwa’.</p>
+
+<p>Begitu juga daerah Haram Makkah, baik masjid atau yang lainnya, maka tidak dimakruhkan melaksanakan sholat di sana pada semua waktu-waktu ini, baik sholat sunnah thawaf atau yang lainnya.</p><br/>
+
+<b><center>Setelah Shalat Ashar</b></center>
+
+<p>Yang ke empat adalah waktu setelah melaksanakan sholat Ashar hingga terbenamnya matahari.</p><br/>
+
+<b><center>Ketika Terbenam Matahari</b></center>
+
+<p>Yang ke lima adalah waktu ketika terbenamnya matahari, yaitu ketika mendekati terbenam hingga sempurna terbenam.</p>
+
+</p>
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="9.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 10</font>
+	</a>
+	
+	<a href="11.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

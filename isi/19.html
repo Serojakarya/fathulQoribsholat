@@ -1,0 +1,661 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum-hukum Shalat</a></li>
+    <li><a href="2.html">2. Syarat Orang yang Wajib Shalat</a></li>
+    <li><a href="3.html">3. Syarat Sebelum Masuk Shalat</a></li>
+	<li><a href="4.html">4. Rukun Shalat</a></li>
+	<li><a href="5.html">5. Sunnah Sholat</a></li>
+	<li><a href="6.html">6. Beda Laki-laki dan Perempuan dalam Shalat</a></li>
+	<li><a href="7.html">7. 11 Pembatal Shalat</a></li>
+	<li><a href="8.html">8. Jumlah Rakaat Shalat</a></li>
+	<li><a href="9.html">9. Yang Tertinggal dalam Shalat</a></li>
+	<li><a href="10.html">10. Waktu yang Makruh untuk Shalat</a></li>
+	<li><a href="11.html">11. Shalat Berjamaah</a></li>
+	<li><a href="12.html">12. Shalat Qashar dan Jamak</a></li>
+	<li><a href="13.html">13. Shalat Jumat</a></li>
+	<li><a href="14.html">14. Shalat Idul Fitri dan Idul Adha</a></li>
+	<li><a href="15.html">15. Shalat Gerhana Matahari dan Bulan</a></li>
+	<li><a href="16.html">16. Shalat Istisqa (Minta Hujan)</a></li>
+	<li><a href="17.html">17. Bab Shalat Khauf (Saat Perang)</a></li>
+	<li><a href="18.html">18. Pakaian Sutra dan Cincin Emas</a></li>
+	<li><a href="19.html">19. Jenazah: Cara Memandikan, Mengkafani, Menyolati dan Memendamnya</a></li>
+</ul>
+
+</div>
+
+
+<h1>Bab Jenazah</h1><br/><br/>
+
+
+	
+
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+فصل-: فيما يتعلق بالميت من غسله وتكفينه والصلاة عليه ودفنه (ويلزم) على طريق فرض الكفاية (في الميت) المسلم غير المحرم والشهيد (أربعة أشياء غسله وتكفينه والصلاة عليه ودفنه) وإن لم يعلم بالميت إلا واحد تعين عليه ما ذكر، وأما الميت الكافر فالصلاة عليه حرام حربياً كان أو ذمياً. ويجوز غسله في الحالين، ويجب تكفين الذمي ودفنه دون الحربي والمرتد، وأما المحرم إذا كفن فلا يستر رأسه، ولا وجه المحرمة وأما الشهيد فلا يصلى عليه كما ذكره المصنف بقوله (واثنان لا يغسلان ولا يصلى عليهما)
+<br/><br/>
+أحدهما (الشهيد في معركة المشركين) وهو من مات في قتال الكفار بسببه سواء قتله كافر مطلقاً أو مسلم خطأ، أو عاد سلاحه إليه أو سقط عن دابته أو نحو ذلك، فإن مات بعد انقضاء القتال بجراحة فيه يقطع بموته منها، فغير شهيد في الأظهر وكذا لو مات في قتال البغاة أو مات في القتال لا بسبب القتال
+<br/><br/>
+و- الثاني (السقط الذي لم يستهل) أي لم يرفع صوته (صارخاً) فإن استهل صارخاً أو بكى فحكمه كالكبير، والسقط بتثليث السين الولد النازل قبل تمامه مأخوذ من السقوط (ويغسل الميت وتراً) ثلاثاً أو خمساً أو أكثر من ذلك (ويكون في أول غسله سدر) أي يسن أن يستعين الغاسل في الغسلة الأولى من غسلات الميت بسدر أو خطمي، (و) يكون (في آخره) أي آخر غسل الميت غير المحرم (شيء) قليل (من كافور) بحيث لا يغير الماء. واعلم أن أقل غسل الميت تعميم بدنه بالماء مرة واحدة، وأما أكمله فمذكور في المبسوطات
+<br/><br/>
+ويكفن- الميت ذكراً كان أو أنثى بالغاً كان أو لا (في ثلاثة أثواب بيض) وتكون كلها لفائف متساوية طولاً وعرضاً تأخذ كل واحدة منها جميع البدن (ليس فيها قميص ولا عمامة) وإن كفن الذكر في خمسة فهي الثلاثة المذكورة وقميص وعمامة، أو المرأة في خمسة فهي إزار وخمار وقميص ولفافتان، وأقل الكفن ثوب واحد يستر عورة الميت على الأصح في الروضة وشرح المهذب، ويختلف بذكورة الميت وأنوثته، ويكون الكفن من جنس ما يلبسه الشخص في حياته
+</font></div>
+
+<hr><br/>
+
+
+
+
+<b><center>Jenis Mayat (Mayit)</b></center>
+
+
+<p>(Fasal) menjelaskan hal-hal yang terkait dengan orang yang meninggal dunia, dari memandikan, mengkafani, mensholati dan memakamkannya.</p> 
+
+<p>Di dalam mayat orang Islam yang tidak melaksanakan ihram dan bukan yang mati syahid, Wajib fardlu kifayah untuk melakukan empat perkara, yaitu memandikan, mengkafani, mensholati dan memakamkannya.</p> 
+
+<p>Jika mayat tidak diketahui kecuali oleh satu orang, maka semua hal yang telah disebutkan di atas menjadi fardlu ‘ain padanya.</p> 
+
+<p>Adapun mayat orang kafir, maka hukumnya haram untuk mensholatinya, baik kafir harbi atau dzimmi. Namun kedua macam orang kafir ini boleh dimandikan</p> 
+
+<p>Wajib mengkafani dan mengubur mayat kafir dzimmi, tidak kafir harbi dan orang murtad.</p> 
+
+<p>Adapun mayat orang yang sedang melaksanakan ihram, ketika di kafani, maka kepalanya tidak ditutup, begitu juga wajah mayat wanita yang melaksanakan ihram.</p> <br/>
+
+<b><center>Orang Mati Syahid</b></center>
+
+<p>Adapun mayat orang yang mati syahid, maka tidak disholati sebagaimana yang dijelaskan oleh mushannif dengan perkataannya,</p> 
+
+<p>Ada dua mayat yang tidak dimandikan dan tidak disholati.</p> 
+
+<p>Salah satunya orang mati syahid di dalam pertempuran melawan kaum musyrik.</p> 
+
+<p>Dia adalah orang yang gugur di dalam pertempuran melawan orang-orang kafir sebab pertempuran tersebut.</p> 
+
+<p>Baik ia dibunuh oleh orang kafir secara mutlak, oleh orang Islam karena keliru, senjatanya mengenai pada dirinya sendiri, jatuh dari kendaraan, atau sesamanya.</p> 
+
+<p>Jika ada seseorang meninggal dunia setelah pertempuran selesai sebab luka-luka saat bertempur yang di pastikan akan menyebabkan ia meninggal dunia, maka ia bukan orang mati syahid menurut pendapat al adhhar.</p> 
+
+<p>Begitu juga -bukan orang mati syahid- seandainya seseorang meninggal dunia saat bertempur melawan bughah (pemberontak), atau meninggal di pertempuran melawan orang kafir namun bukan disebabkan pertempuran tersebut.</p> <br/>
+
+<b><center>Bayi Keguguran</b></center>
+
+<p>Yang kedua adalah siqth (bayi keguguran) yang tidak mengeluarkan suara keras saat dilahirkan.</p> 
+
+<p>Jika bayi tersebut sempat mengeluarkan suara atau menangis, maka hukumnya seperti mayat dewasa.</p> 
+
+<p>Siqth dengan huruf sin yang bisa dibaca tiga wajah, adalah bayi yang terlahir sebelum sempurna bentuknya. Lafadz “siqth” di ambil dari lafadz “as suquth” yang berarti gugur.</p> <br/>
+
+<b><center>Memandikan Mayat</b></center>
+
+<p>Seorang mayat dimandikan sebanyak hitungan ganjil, tiga, lima atau lebih dari itu.</p> 
+
+<p>Di awal basuhannya diberi daun bidara, maksudnya disunnahkan bagi orang yang memandikan untuk menggunakan daun bidara atau daun pohon asam dibasuhan pertama dari basuhan-basuhan pada mayat.</p> 
+
+<p>Dan di akhir basuhan mayat selain mayat yang sedang melaksanakan ihram, sunnah diberi sedikit kapur barus sekira tidak sampai merubah sifat-sifat air.</p> 
+
+<p>Ketahuilah sesungguhnya minimal memandikan mayat adalah meratakan seluruh badannya dengan air sebanyak satu kali.</p> 
+
+<p>Adapun memandikan yang paling sempurna, maka dijelaskan di kitab-kitab yang diperluas penjelasannya.</p> <br/>
+
+<b><center>Mengkafani</b></center>
+
+<p>Mayat laki atau perempuan, baligh ataupun belum, dikafani di dalam tiga lembar kain putih.</p> 
+
+<p>Dan semuanya adalah lembaran-lembaran kain yang sama panjang dan lebarnya, masing-masing bisa menutup semua bagian badan.</p> 
+
+<p>Dan pada kafan-kafan tersebut tidak disertakan baju kurung dan surban.</p> 
+
+<p>Jika mayat laki-laki akan dikafani di dalam lima lembar, maka dengan menggunakan tiga lembar kain tersebut, baju kurung dan surban.</p> 
+
+<p>Atau mayat perempuan dikafani dengan lima lembar, maka dengan menggunakan jarik, kerudung, baju kurung dan dua lembar kain.<sup>1</sup></p> 
+
+<p>Minimal kafan adalah satu lembar kain yang bisa menutup aurat mayat menurut pendapat al ashah di dalam kitab ar Raudlah dan Syarh al Muhadzdzab. Dan ukurannya berbeda-beda sesuai dengan jenis kelamin laki-laki dan perempuan si mayat.</p> 
+
+<p>Dan kafan diambilkan dari jenis kain yang biasa digunakan seseorang saat ia masih hidup.</p> 
+</p>
+<br/>
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+وَيُكَبِّرُ عَلَيْهِ- أَيِ الْمَيِّتِ إِذَا صَلَّى عَلَيْهِ (أَرْبَعَ تَكْبِيْرَاتٍ) بِتَكْبِيْرَةِ الْإِحْرَامِ. وَلَوْ كَبَّرَ خَمْساً لَمْ تَبْطُلْ. لَكِنْ لَوْ خَمَّسَ إِمَامُهُ لَمْ يُتَابِعْهُ بَلْ يُسَلِّمُ أَوْ يَنْتَظِرُهُ لِيُسَلِّمَ مَعَهُ وَهُوَ أَفْضَلُ، وَ(يَقْرَأُ) الْمُصَلِّيُ (الْفَاتِحَةَ بَعْدَ) التَّكْبِيْرَةِ (الْأُوْلَى) وَيَجُوْزُ قِرَاءَتُهَا بَعْدَ غَيْرِ الْأُوْلَى ، (وَيُصَلِّيْ عَلَى النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ بَعْدَ) التَّكْبِيْرَةِ (الثَّانِيَةِ)، 
+<br/><br/>
+وَأَقَلُّ الصَّلَاةِ عَلَيْهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ "اللهم صَلِّ عَلَى مُحَمَّدٍ" ، (وَيَدْعُوْ لِلْمَيِّتِ بَعْدَ الثَّالِثَةِ فَيَقُوْلُ) وَأَقَلُّ الدُّعَاءِ لِلْمَيِّتِ "اللهم اغْفِرْ لَهُ" وَأَكْمَلُهُ مَذْكُوْرَةٌ فِيْ قَوْلِ الْمُصَنِّفِ فِيْ بَعْضِ نُسَخِ الْمَتْنِ وَهُوَ (اللهم إِنَّ هَذَا عَبْدُكَ وَابْنُ عَبْدَيْكَ خَرَجَ مِنْ رَوْحِ الدُّنْيَا وَسَعَتِهَا وَمَحْبُوْبِهِ وَأَحِبَّائِهِ فِيْهَا إِلَى ظُلْمَةِ الْقَبْرِ وَمَا هُوَ لَاقِيْهِ كَانَ يَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ وَحْدَكَ لَاشَرِيْكَ لَكَ وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُوْلُكَ وَأَنْتَ أَعْلَمُ بِهِ مِنَّا اللهم إِنَّهُ نَزَلَ بِكَ وَأَنْتَ خَبِيْرٌ مَنْزُوْلٌ بِهِ وَأَصْبَحَ فَقِيْرًا إِلَى رَحْمَتِكَ وَأَنْتَ غَنِيٌّ عَنْ عَذَابِهِ وَقَدْ جِئْنَاكَ رَاغِبِيْنَ إِلَيْكَ شُفَعَاءَ لَهُ اللهم إِنْ كَانَ مُحْسِنًا فَزِدْ فِيْ إِحْسَانِهِ وَإِنْ كَانَ مُسِيْئًا فَتَجَاوَزْ عَنْهُ وَلَقِّهِ بِرَحْمَتِكَ رِضَاكَ وَقِهِ فِتْنَةَ الْقَبْرِ وَعَذَابَهُ وَ افْسَحْ لَهُ فِيْ قَبْرِهِ وَجَافِ الْأَرْضَ عَنْ جَنْبَيْهِ وَلَقِّهِ بِرَحْمَتِكَ الْأَمْنَ مِنْ عَذَابِكَ حَتَّى تَبْعَثَهُ آمِنًا إِلَى جَنَّتِكَ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِيْنَ
+<br/><br/>
+وَيَقُوْلُ فِيْ الرَّابِعَةِ اللهم لَاتَحْرِمْنَا أَجْرَهُ وَلَاتَفْتِنَّا بَعْدَهُ وَاغْفِرْ لَنَا وَلَهُ. وَيُسَلِّمُ) الْمُصَلِّيْ (بَعْدَ) التَّكْبِيْرَةِ (الرّابِعَةِ)، وَالسَّلَامُ هُنَّا كَالسَّلَامِ فِيْ صَلَاةِ غَيْرِ الْجَنَازَةِ فِيْ كَيْفِيَتِهِ وَعَدَدِهِ لَكِنْ يُسْتَحَبُّ هُنَّا زِيَادَةُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ.
+<br/><br/>
+ (وَيُدْفَنُ) الْمَيِّتُ (فِيْ لَحْدٍ مُسْتَقْبِلَ الْقِبْلَةِ)، وَاللَّحْدُ بِفَتْحِ اللَّامِ وَضَمِّهَا وَسُكُوْنِ الْحَاءِ مَا يُحْفَرُ فِيْ أَسْفَلِ جَانِبِ الْقَبْرِ مِنْ جِهَةِ الْقِبْلَةِ قَدْرَ مَا يَسَعُ الْمَيِّتَ وَيَسْتُرُهُ ، وَالدَّفْنُ فِيْ اللَّحْدِ أَفْضَلُ مِنَ الدَّفْنِ فِي الشَّقِّ إِنْ صَلُبَتِ الْأَرْضُ ، وَالشِّقُّ أَنْ يُحْفَرَ فِيْ وَسَطِ الْقَبْرِ كَالنَّهْرِ وَيُبْنَى جَانِبَاهُ وَيُوْضَعُ الْمَيِّتُ بَيْنَهُمَا وَيُسْقَفُ عَلَيْهِ بِلَبِنٍ وَنَحْوِهِ ، وَيُوْضَعُ الْمَيِّتُ عِنْدَ مُؤَخِّرِ الْقَبْرِ ، وَفِيْ بَعْضِ النُّسَخِ بَعْدَ مُسْتَقْبِلَ الْقِبْلَةِ زِيَادَةٌ ، وَهِيَ (وَيُسَلُّ مِنْ قِبَلِ رَأْسِهِ) أَيْ سَلًّا (بِرِفْقٍ) لَابِعَنْفٍ . 
+<br/><br/>
+وَيَقُوْلُ الَّذِيْ يُلْحِدُهُ "بِسْمِ اللهِ وَعَلَى مِلَّةِ رَسُوْلِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ" وَيُضْطَجَعُ فِيْ الْقَبْرِ بَعْدَ أَنْ يُعَمَّقَ قَامَةً وَبَسْطَةً- وَيَكُوْنُ الْاِضْطِجَاعُ مُسْتَقْبِلَ الْقِبْلَةِ عَلَى جَنْبِهِ الْأَيْمَنِ، فَلَوْ دُفِنَ مُسْتَدْبِرَ الْقِبْلَةِ أَوْ مُسْتَلْقِيًا نُبِشَ وَوُجِّهَ لِلْقِبْلَةِ مَالَمْ يَتَغَيَّرْ، (وَيُسْطَحُ الْقَبْرُ) وَلَا يُسْنَمُ (وَلَا يُبْنَى عَلَيْهِ وَلَا يُجَصَّصُ ) أَيْ يُكْرَهُ تَجْصِيْصُهُ بِالْجَصِّ،  وَهُوَ النَّوْرَةُ الْمُسَمَّاةُ بِالْجِيْرِ
+<br/><br/>
+
+وَلَا بَأْسَ بِالْبُكَاءِ عَلَى الْمَيِّتِ قَبْلَ الْمَوْتِ وَبَعْدَهُ وَتَرْكُهُ أَوْلَى وَيَكُوْنُ الْبُكَاءُ عَلَيْهِ (مِنْ غَيْرِ نَوْحٍ) أَيْ رَفْعِ صَوْتٍ بِالنَّدْبِ (وَلَا شَقِّ ثَوْبٍ) ، وَفِيْ بَعْضِ النُّسَخِ جَيْبٌ بَدَلَ ثَوْبٍ وَالْجَيْبُ طُوْقُ الْقَمِيْصِ
+<br/><br/>
+وَيُعَزَّى أَهْلُهُ- أَيِ الْمَيِّتِ صَغِيْرُهُمْ وَكَبِيْرُهُمْ وَذَكَرُهُمْ وَأُنْثَاهُمْ إِلَّا الشَّابَةَ فَلَا يُعَزِّيْهَا إِلَّا مَحَارِمُهَا وَالتَّعْزِيَةُ سُنَّةٌ قَبْلَ الدَّفْنِ وَبَعْدَهُ (إِلَى ثَلَاثَةِ أَيَّامٍ مِنْ) بَعْدِ (دَفْنِهِ) إِنْ كَانَ الْمُعَزِّيْ وَالْمُعَزَّى حَاضِرَيْنِ ، فَإِنْ كَانَ أَحَدُهُمَا غَائِبًا امْتَدَّتِ التَّعْزِيَةُ إِلَى حُضُوْرِهِ، وَالتَّعْزِيَةُ لُغَةً التَّسْلِيَةُ لِمَنْ أُصِيْبَ بِمَنْ يَعَزُّ عَلَيْهِ وَشَرْعًا الْأَمْرُ بِالصَّبْرِ وَالْحَثُّ عَلَيْهِ بِوَعْدِ الْأَجْرِ وَالدُّعَاءُ لِلْمَيِّتِ بِالْمَغْفِرَةِ وَالْمُصَابِ بِجَبْرِ الْمُصِيْبَةِ
+. (وَلَا يُدْفَنُ اثْنَانِ فِيْ قَبْرٍ) وَاحِدٍ إِلَّا لِحَاجَةٍ) كَضَيْقِ الْأَرْضِ وَكَثْرَةِ الْمَوْتَى
+
+
+
+</font></div>
+
+<hr><br/>
+
+<b><center>Mensholati Mayat</b></center>
+
+<p>Dan seseorang membaca takbir empat kali beserta takbiratul ihram saat mensholati mayat.</p>
+
+<p>Dan seandainya ia melakukan takbir lima kali, maka sholatnya tidak batal.</p>
+
+<p>Akan tetapi, seandainya imamnya membaca takbir lima kali, maka ia tidak usah mengikutinya, akan tetapi melakukan salam sendiri atau menanti sang imam dan melakukan salam bersamanya dan ini yang lebih utama.</p>
+
+<p>Orang yang sholat jenazah, membaca surat Al Fatihah setelah takbir yang pertama. Dan boleh membaca Al Fatihah setelah takbir selain yang pertama.</p>
+
+<p>Dan membaca sholawat untuk baginda Nabi saw setelah takbir kedua.</p>
+
+<p>Minimal bacaan sholawat untuk baginda Nabi Saw adalah,</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+"اللهم صَلِّ عَلَى مُحَمَّدٍ"
+</font></div><br/>
+
+<p>Dan berdo’a untuk mayat setelah takbir ketiga. Maka ia mengucapkan, minimal doa untuk mayat adalah,</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+"اللهم اغْفِرْ لَهُ"
+</font></div><br/>
+<p><i>“ya Allah ampunilah ia”</i></p>
+<p>Dan doa yang paling sempurna disebutkan di dalam ucapan mushannif di dalam sebagian redaksi matan, yaitu,<i> “ya Allah sesungguhnya mayat ini adalah hamba-Mu dan putra dua hamba-Mu. Ia telah keluar dari kesenangan dan keluasan dunia, dari orang yang ia cintai dan para kekasihnya di dunia menuju gelapnya kubur dan apa yang akan ia temui di sana. Ia bersaksi sesungguhnya tidak ada tuhan selain Engkau, hanya Engkau, tidak ada sekutu bagi Engkau, dan sesungguhnya Muhammad adalah hamba dan utusan-Mu. Engkau lebih tahu terhadapnya daripada kami. Ya Allah, sesungguhnya ia telah singgah pada-Mu dan Engkau adalah Tuhan yang disinggahi. Ia telah menjadi orang yang sangat membutuhkan rahmat-Mu dan Engkau tidak butuh untuk meyiksanya. Sesungguhnya kami datang pada-Mu karena mencintai-Mu dan memohonkan syafaat untuknya. Ya Allah, jika ia adalah orang yang berbuat baik, maka tambahkanlah kebaikannya. Dan jika ia adalah orang yang berbuat jelek, maka temukanlah ia pada keridlaan-Mu sebab rahmat-Mu, lindungilah ia dari fitnah dan siksa kubur, luaskanlah ia di dalam kuburnya, renggangkanlah bumi dari kedua lambungnya, dan sebab rahmat-Mu temukanlah padanya rasa aman dari siksa-Mu hingga engkau bangunkan ia dalam keadaan aman menuju surga-Mu, dengan rahmat-Mu wahai Tuhan yang paling pemurah”.</i></p>
+
+<p>Setelah takbir ke empat ia membaca do’a,</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+اللهم لَاتَحْرِمْنَا أَجْرَهُ وَلَاتَفْتِنَّا بَعْدَهُ وَاغْفِرْ لَنَا وَلَهُ
+</font></div><br/>
+<p><i>“ya Allah, janganlah Engkau halangi pahalanya pada kami. Dan janganlah Engkau menfitnah kami setelah ia meninggal. Dan ampunilah kami dan dia”</i></p>
+
+<p>Dan orang yang mensholati melakukan salam setelah takbir ke empat.</p>
+
+<p>Bacaan salam di dalam sholat ini sama seperti bacaan salam di dalam selain sholat jenazah dalam tata cara dan jumlahnya, akan tetapi di sini disunnahkan untuk menambah lafadz, <font size="5" face="KFGQPC Uthman Taha Naskh Bold">وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ </font></p><br/>
+
+
+
+<b><center>Pemakaman</b></center>
+
+<p>Seorang mayat dimakamkan di dalam lahd (luang landak) dengan menghadap kiblat.</p>
+
+<p>Lahd, dengan huruf lam yang terbaca fathah dan dlammah, dan huruf ha’ yang terbaca sukun, adalah bagian yang digali di sisi liang kubur bagian bawah di arah kiblat kira-kira seukuran yang bisa memuat dan menutupi mayat.</p>
+
+
+<p>Mengubur di dalam lahd itu lebih utama daripada mengubur di dalam syiqq jika postur tanahnya keras.</p>
+
+
+<p>Syiqq adalah galian yang berada di bagian tengah liang kubur yang berbentuk seperti selokan air, di bangun kedua sisinya, mayat di letakkan di antara kedua sisi tersebut dan di tutup dengan bata mentah atau sesamanya.</p>
+
+<p>Sebelum dimasukkan, mayat diletakkan di sisi belakang / bagian kaki kubur.</p>
+
+<p>Di dalam sebagian redaksi, setelah kata-kata “menghadap kiblat”, ada tambahan keterangan.</p>
+
+<p>Yaitu, mayat di turunkan ke liang kubur dimulai dari arah kepalanya, maksudnya dimasukkan dengan cara yang halus tidak kasar.</p>
+
+<p>Orang yang memasukkan mayat ke liang lahd, sunnah mengucapkan,</p>
+
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+"بِسْمِ اللهِ وَعَلَى مِلَّةِ رَسُوْلِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ"
+</font></div><br/>
+<p><i>“dengan menyebut Nama Allah. Dan atas agama Rosulullah shallallahu ‘alaihi wa sallam”</i></p>
+<p>Dan mayat diletakkan di dalam kubur dengan posisi tidur miring setelah kubur tersebut digali sedalam ukuran orang berdiri dan melambaikan tangan.</p>
+
+<p>Posisi tidur miring tersebut dengan menghadap kiblat dan bertumpuh pada lambung mayat sebelah kanan.</p>
+
+<p>Seandainya mayat dikubur dengan posisi membelakangi kiblat atau terlentang, maka wajib digali lagi dan di hadapkan ke arah kiblat, selama mayat tersebut belum berubah.</p>
+
+<p>Bentuk kubur tersebut diratakan, tidak dibentuk seperti punuk unta, tidak dibangun dan tidak di tajshish, maksudnya makruh men-tajshish­ kubur dengan gamping.</p>
+
+<p>Jash adalah kapur yang diberi nama dengan gamping.
+</p><br/>
+
+
+<b><center>Menangisi Mayat</b></center>
+
+<p>Tidak masalah/tidak apa-apa menangisi mayat, sebelum dan setelah meninggal dunia. Namun tidak menangis itu lebih utama.</p>
+
+<p>Namun menangisi orang meninggal harus tidak sampai teriak-teriak disertai mengeluh dan tidak sampai menyobek pakaian.</p>
+
+<p>Dalam sebagian redaksi mengguna-kan bahasa “jaib” sebagai ganti “tsaub”. Jaib adalah kera baju khamis.</p></br/>
+
+
+<b><center>Ta’ziyah</b></center>
+
+<p>Sunnah ta’ziyah kepada keluarga mayat, baik yang kecil, besar, laki-laki, dan yang wanita kecuali wanita yang muda. Maka tidak dianjurkan melakukan ta’ziyah pada wanita yang muda selain orang-orang yang memiliki ikatan mahram dengannya.</p>
+
+<p>Ta’ziyah sunnah dilakukan sebelum dan setelah pemakaman hingga tiga hari terhitung sejak setelah pemakaman, jika orang yang ta’ziyah dan yang dita’ziyahi tidak sedang bepergian.</p>
+
+<p>Jika salah satunya sedang tidak ditempat, maka masa kesunnahan ta’ziyah tetap terus berlangsung hingga kedatangannya.</p>
+
+<p>Secara bahasa ta’ziyah adalah menghibur orang yang terkena musibah sebab orang yang dikasihinya. Dan secara syara’ adalah perintah dan dorongan untuk bersabar dengan menjanjikan pahala dan berdo’a untuk mayat agar mendapat ampunan, dan untuk orang yang terkena musibah agar musibahnya mendapatkan ganti yang baik.</p>
+
+<p>Tidak diperkenankan memakamkan dua orang di dalam satu kubur kecuali karena hajat seperti sempitnya lahan dan terlalu banyaknya orang yang meninggal dunia.</p>
+</p>
+
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Yang dikehendaki Izar atau sarung tersebut adalah kain yang menutup anggota antara pusar dan lutut. Tausyikh,
+Darul Minhaj, hal. 150.</p>
+
+
+</phr>
+
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="18.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 19</font>
+	</a>
+	
+	<a href="">
+      
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum-hukum Shalat</a></li>
+    <li><a href="2.html">2. Syarat Orang yang Wajib Shalat</a></li>
+    <li><a href="3.html">3. Syarat Sebelum Masuk Shalat</a></li>
+	<li><a href="4.html">4. Rukun Shalat</a></li>
+	<li><a href="5.html">5. Sunnah Sholat</a></li>
+	<li><a href="6.html">6. Beda Laki-laki dan Perempuan dalam Shalat</a></li>
+	<li><a href="7.html">7. 11 Pembatal Shalat</a></li>
+	<li><a href="8.html">8. Jumlah Rakaat Shalat</a></li>
+	<li><a href="9.html">9. Yang Tertinggal dalam Shalat</a></li>
+	<li><a href="10.html">10. Waktu yang Makruh untuk Shalat</a></li>
+	<li><a href="11.html">11. Shalat Berjamaah</a></li>
+	<li><a href="12.html">12. Shalat Qashar dan Jamak</a></li>
+	<li><a href="13.html">13. Shalat Jumat</a></li>
+	<li><a href="14.html">14. Shalat Idul Fitri dan Idul Adha</a></li>
+	<li><a href="15.html">15. Shalat Gerhana Matahari dan Bulan</a></li>
+	<li><a href="16.html">16. Shalat Istisqa (Minta Hujan)</a></li>
+	<li><a href="17.html">17. Bab Shalat Khauf (Saat Perang)</a></li>
+	<li><a href="18.html">18. Pakaian Sutra dan Cincin Emas</a></li>
+	<li><a href="19.html">19. Jenazah: Cara Memandikan, Mengkafani, Menyolati dan Memendamnya</a></li>
+</ul>
+
+</div>
+
+
+<h1>Kitab Hukum-hukum Shalat</h1><br/><br/>
+
+
+
+
+<div align="center" class="style6"><font size="4" face="LPMQ_IsepMisbah"><b>كتاب أحكام الصلاة 
+</b></font></div>
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+وهي لغة الدعاء وشرعاً كما قال الرافعي أقوال وأفعال، مفتتحة بالتكبير مختتمة بالتسليم بشرائط مخصوصة (والصلاة المفروضة) وفي بعض النسخ الصلوات المفروضات (خمس) يجب كل منها بأول الوقت وجوباً موسعاً إلى أن يبقى من الوقت ما يسعها فيضيق حينئذ
+<br/><br/>
+الظهر - أي صلاته. قال النووي: سميت بذلك لأنها ظاهرة وسط النهار (وأول وقتها زوال) أي ميل (الشمس) عن وسط السماء لا بالنظر لنفس الأمر، بل لما يظهر لنا ويعرف ذلك الميل بتحول الظل إلى جهة المشرق بعد تناهي قصره الذي هو غاية ارتفاع الشمس (وآخره) أي وقت الظهر (إذا صار ظل كل شيء مثله بعد) أي غير (ظل الزوال) والظل لغة الستر تقول أنا في ظل فلان أي ستره، وليس الظل عدم الشمس كما قد يتوهم، بل هو أمر وجودي يخلقه الله تعالى لنفع البدن وغيره
+<br/><br/>
+والعصر - أي صلاتها، وسميت بذلك لمعاصرتها وقت الغروب (وأول وقتها الزيادة على ظل المثل) وللعصر خمسة أوقات أحدها وقت الفضيلة، وهو فعلها أول الوقت والثاني وقت الاختيار وأشار له المصنف بقوله
+<br/><br/>
+وآخره في الاختيار إلى ظل المثلين - والثالث وقت الجواز وأشار له بقوله (وفي الجواز إلى غروب الشمس) والرابع وقت جواز بلا كراهة، وهو من مصير الظل مثلين إلى الاصفرار، والخامس وقت تحريم وهو تأخيرها إلى أن يبقى من الوقت ما لا يسعها
+<br/><br/>
+والمغرب - أي صلاتها وسميت بذلك لفعلها وقت الغروب (ووقتها واحد وهو غروب الشمس) أي بجميع قرصها ولا يضر بقاء شعاع بعده (وبمقدار ما يؤذن) أي الشخص (ويتوضأ) أو يتيمم (ويستر العورة ويقيم الصلاة ويصلي خمس ركعات) وقوله وبمقدار الخ ساقط من بعض نسخ المتن، فإن انقضى المقدار المذكور خرج وقتها هذا هو القول الجديد، والقديم ورجحه النووي أن وقتها يمتد إلى مغيب الشفق الأحمر
+<br/><br/>
+والعشاء - بكسر العين ممدوداً اسم لأول الظلام وسميت الصلاة بذلك لفعلها فيه (وأول وقتها إذا غاب الشفق الأحمر) وأما البلد الذي لا يغيب فيه الشفق، فوقت العشاء في حق أهله أن يمضي بعد الغروب زمن يغيب فيه شفق أقرب البلاد إليهم ولها وقتان: أحدهما اختيار وأشار له المصنف بقوله (وآخره) يمتد (في الاختيار إلى ثلث الليل) والثاني جواز وأشار له بقوله (وفي الجواز إلى طلوع الفجر الثاني) أي الصادق وهو المنتشر ضوءه معترضاً بالأفق، وأما الفجر الكاذب، فيطلع قبل ذلك لا معترضاً بل مستطيلاً ذاهباً في السماء ثم يزول وتعقبه ظلمة، ولا يتعلق به حكم وذكر الشيخ أبو حامد أن للعشاء وقت كراهة وهو ما بين الفجرين
+<br/><br/>
+والصبح - أي صلاته وهو لغة أول النهار وسميت الصلاة بذلك لفعلها في أوله ولها كالعصر خمسة أوقات: أحدها وقت الفضيلة وهو أول الوقت. والثاني وقت اختيار وذكره المصنف في قوله (وأول وقتها طلوع الفجر الثاني وآخره في الاختيار إلى الإسفار) وهو الإضاءة. والثالث وقت الجواز وأشار له المصنف بقوله (وفي الجواز) أي بكراهة (إلى طلوع الشمس). والرابع جواز بلا كراهة إلى طلوع الحمرة. والخامس وقت تحريم وهو تأخيرها إلى أن يبقى من الوقت ما لا يسعها.
+
+
+</font></div>
+<hr><br/>
+
+
+
+<b><center>Definisi Shalat</b></center>
+
+<p>Sholat secara bahasa adalah do’a. Dan secara syara’, sebagaimana yang di sampaikan oleh imam ar Rafi’i, adalah ucapan dan pekerjaan yang di mulai dengan takbir dan di akhiri dengan salam dengan syarat-syarat tertentu.</p><br/>
+
+<b><center>Nama dan Waktu Shalat Wajib</b></center>
+
+<p>Sholat yang difardlukan ada lima. Dalam sebagian redaksi menggunkan bahasa “sholat-sholat yang difardlukan”.</p>
+
+<p>Masing-masing dari sholat tersebut wajib di laksanakan sebab masuknya awal waktu dengan kewajiban yang diperluas (tidak harus segera dilakukan) hingga waktu yang tersisa hanya cukup digunakan untuk melakukannya, maka saat itu waktunya menjadi sempit (harus segera dilakukan).</p><br/>
+
+<b><center>Sholat Dhuhur</b></center>
+
+<p>Yaitu sholat Dhuhur. Imam an Nawawi berkata, “sholat ini disebut dengan Dhuhur karena sesungguhnya sholat ini nampak jelas di tengah hari.”</p>
+
+<p>Awal masuknya waktu sholat Dhuhur adalah saat tergelincirnya, maksudnya bergesernya matahari dari tengah langit, tidak dilihat dari kenyataannya, namun pada apa yang nampak oleh kita.</p>
+
+<p>Pergeseran tersebut bisa diketahui dengan bergesernya bayang-bayang ke arah timur setelah posisinya tepat di tengah-tengah, yaitu puncak posisi tingginya matahari.</p>
+
+<p>Dan batas akhirnya waktu sholat Dhuhur adalah ketika bayang-bayang setiap benda seukuran dengan bendanya tanpa memasukkan bayang-bayang yang nampak saat zawal (gesernya matahari).</p>
+
+<p>Dhil secara bahasa adalah penutup/ pelindung, engkau berkata, “aku berada di bawah dhilnya fulan”, maksdnya perlindungannya.</p>
+
+<p>Bayang-bayang bukan berarti tidak adanya sinar matahari sebagaimana yang di salah fahami, akan tetapi bayang-bayang adalah perkara wujud yang di ciptakan oleh Allah Swt untuk kemanfaatan badan dan selainnya.</p><br/>
+
+<b><center>Sholat Ashar</b></center>
+
+<p>Dan Ashar, maksudnya sholat Ashar. Disebut dengan sholat Ashar, karena pelaksanaannya mendekatii waktu terbenamnya matahari.</p>
+
+<p>Permulaan waktunya adalah mulai dari bertambahnya bayangan dari ukuran bendanya.</p>
+
+<p>Sholat Ashar memiliki lima waktu. Salah satunya adalah waktu fadlilah, yaitu mengerjakan sholat di awal waktu.</p>
+
+<p>Yang kedua adalah waktu ikhtiyar. Waktu ini diisyarahi oleh mushannif dengan ucapan beliau, akhir waktu Ashar di dalam waktu ikhtiyar adalah hingga ukura bayang-bayang dua kali lipat ukuran bendanya.</p>
+
+<p>Yang ketiga adalah waktu jawaz. Waktu ini diisyarahi oleh mushannif dengan ucapan beliau, dan di dalam waktu jawaz hingga terbenamnya matahari.</p>
+
+<p>Yang ke empat adalah waktu jawaz tanpa disertai hukum makruh. Yaitu sejak ukuran bayang-bayang dua kali lipat dari ukuran bendanya hingga waktu ishfirar (remang-remang).</p>
+
+<p>Yang ke lima adala waktu tahrim (haram). Yaitu meng-akhirkan pelaksanaan sholat hingga waktu yang tersisa tidak cukup untuk melaksanakan sholat.</p><br/>
+
+<b><center>Sholat Maghrib</b></center>
+
+<p>Dan Maghrib, maksudnya sholat Maghrib. Disebut dengan sholat Maghrib karena dikerjakan saat waktu terbenamnya matahari.</p>
+
+<p>Waktu sholat Maghrib hanya satu. Yaitu terbenamnya matahari, maksudnya seluruh bulatan matahari dan tidak masalah walaupun setelah itu masih terlihat sorotnya, dan kira-kira waktu yang cukup bagi seseorang untuk melakukan adzan, wudlu’ atau tayammum, menutup aurat, iqomah sholat dan sholat lima rokaat.</p>
+
+<p>Perkataan mushannif <font size="5" face="KFGQPC Uthman Taha Naskh Bold">“وَبِمِقْدَارِ إِلَخْ” </font>terbuang dari sebagian redaksi matan.</p>
+
+<p>Ketika kadar waktu di atas sudah habis, maka waktu maghrib sudah keluar. Ini adalah pendapat Qaul Jadid.</p>
+
+<p>Sedangkan Qaul Qadim, dan diunggulkan oleh imam an Nawawi, adalah sesungguhnya waktu sholat Maghrib memanjang hingga terbenamnya mega merah.</p><br/>
+
+<b><center>Sholat Isya’</b></center>
+
+<p>Dan sholat Isya’. Isya’ dengan terbaca kasroh huruf ‘ainnya adalah nama bagi permulaan petang. Sholat ini disebut dengan nama tersebut karena dikerjakan pada awal petang.</p>
+
+<p>Permulaan waktu Isya’ adalah ketika terbenamnya mega merah.</p>
+
+<p>Adapun negara yang tidak terbenam mega merahnya, maka waktu Isya’ bagi penduduknya adalah ketika setelah ternggelamnya matahari, sudah melewati masa tenggelamnya megah merah negara yang terdekat pada mereka.</p>
+
+<p>Sholat Isya’ memiliki dua waktu. Salah satunya adalah waktu Ikhtiyar, dan di isyarahkan oleh mushannif dengan ucapan beliau, “akhir waktu ikhtiyar sholat Isya’ adalah memanjang hingga seperti malam yang pertama.</p>
+
+<p>Yang kedua adalah waktu jawaz. Dan mushannif memberi isyarah tentang waktu ini dengan ucapan beliau, “dan di dalam waktu jawaz hingga terbitnya fajar kedua, maksudnya fajar Shodiq, yaitu fajar yang menyebar dan membentang sinarnya di angkasa.</p>
+
+<p>Adapun fajar Kadzib, maka terbitnya / muncul sebelum fajar Shodiq, tidak membentang akan tetapi memanjang naik ke atas langit, kemudian hilang dan di ikuti oleh kegelapan malam. Dan tidak ada hukum yang terkait dengan fajar ini.</p>
+
+<p>Asy Syekh Abu Hamid menjelaskan bahwa sesungguhnya sholat Isya’ memiliki waktu Karahah, yaitu waktu di antara dua fajar.</p><br/>
+
+<b><center>Sholat Subuh</b></center>
+
+<p>Dan Subuh, maksudnya sholat Subuh. Secara bahasa, Subuh memiliki arti permulaan siang (pagi). Disebut demikian karena dikerjakan di permulaan siang (pagi).</p>
+
+<p>Seperti halnya sholat Ashar, sholat Subuh juga memiliki lima waktu. Salah satunya adalah waktu fadlilah. Yaitu awal waktu.</p>
+
+<p>Yang kedua adalah waktu ikhtiyar. Mushannif menjelaskannya di dalam ucapan beliau, “awal waktu sholat Subuh adalah mulai terbitnya fajar kedua, dan akhirnya di dalam waktu ikhtiyar adalah hingga isfar, yaitu waktu yang sudah terang.</p>
+
+<p>Yang ketiga adalah waktu jawaz. Dan mushannif mengisarahkannya dengan ucapan beliau, “dan di dalam waktu jawaz, maksudnya disertai dengan hukum makruh adalah hingga terbitnya matahari.</p>
+
+<p>Dan yang ke empat adalah waktu jawaz tanpa disertai hukum makruh adalah sampai terbitnya mega merah.</p>
+
+<p>Dan yang ke lima adalah waktu tahrim (haram), yaitu mengakhirkan pelaksanaan sholat hingga waktu yang tersisa tidak cukup untuk melaksanakan sholat</p>
+
+
+
+
+</p>
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="">
+
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 1</font>
+	</a>
+	
+	<a href="2.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>
+
+

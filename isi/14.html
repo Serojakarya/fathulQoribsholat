@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum-hukum Shalat</a></li>
+    <li><a href="2.html">2. Syarat Orang yang Wajib Shalat</a></li>
+    <li><a href="3.html">3. Syarat Sebelum Masuk Shalat</a></li>
+	<li><a href="4.html">4. Rukun Shalat</a></li>
+	<li><a href="5.html">5. Sunnah Sholat</a></li>
+	<li><a href="6.html">6. Beda Laki-laki dan Perempuan dalam Shalat</a></li>
+	<li><a href="7.html">7. 11 Pembatal Shalat</a></li>
+	<li><a href="8.html">8. Jumlah Rakaat Shalat</a></li>
+	<li><a href="9.html">9. Yang Tertinggal dalam Shalat</a></li>
+	<li><a href="10.html">10. Waktu yang Makruh untuk Shalat</a></li>
+	<li><a href="11.html">11. Shalat Berjamaah</a></li>
+	<li><a href="12.html">12. Shalat Qashar dan Jamak</a></li>
+	<li><a href="13.html">13. Shalat Jumat</a></li>
+	<li><a href="14.html">14. Shalat Idul Fitri dan Idul Adha</a></li>
+	<li><a href="15.html">15. Shalat Gerhana Matahari dan Bulan</a></li>
+	<li><a href="16.html">16. Shalat Istisqa (Minta Hujan)</a></li>
+	<li><a href="17.html">17. Bab Shalat Khauf (Saat Perang)</a></li>
+	<li><a href="18.html">18. Pakaian Sutra dan Cincin Emas</a></li>
+	<li><a href="19.html">19. Jenazah: Cara Memandikan, Mengkafani, Menyolati dan Memendamnya</a></li>
+</ul>
+
+</div>
+
+
+<h1>Sholat Hari Raya (Sholat 'Idain)</h1><br/><br/>
+
+
+	
+
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+فصل: وصلاة العيدين أي الفطر والأضحى (سنة مؤكدة) وتشرع جماعة ولمنفرد ومسافر وحر وعبد وخنثى، وامرأة لا جميلة ولا ذات هيئة، أما العجوز فتحضر العيد في ثياب بيتها بلا طيب،
+<br/><br/>
+ووقت صلاة العيدين ما بين طلوع الشمس وزوالها (وهي) أي صلاة العيد (ركعتان) يحرم بهما بنية عيد الفطر أو الأضحى ويأتي بدعاء الافتتاح و (يكبر في) الركعة (الأولى سبعاً سوى تكبيرة الإحرام) ثم يتعوذ ويقرأ الفاتحة، ثم يقرأ بعدها سورة ق جهراً
+<br/><br/>
+و- يكبر (في) الركعة (الثانية خمساً سوى تكبيرة القيام) ثم يتعوذ ثم يقرأ الفاتحة وسورة اقتربت جهراً (ويخطب) ندباً (بعدهما) أي الركعتين (خطبتين يكبر في) ابتداء (الأولى تسعاً) ولاء
+<br/><br/>
+و- يكبر (في) ابتداء (الثانية سبعاً) ولاء، ولو فصل بينهما بتحميد وتهليل وثناء كان حسناً، والتكبير على قسمين: مرسل وهو ما لا يكون عقب صلاة. ومقيد وهو ما يكون عقبها. وبدأ المصنف بالأول فقال (ويكبر) ندباً كل من ذكر وأنثى وحاضر ومسافر في المنازل، والطرق والمساجد والأسواق. (من غروب الشمس من ليلة العيد) أي عيد الفطر ويستمر هذا التكبير (إلى أن يدخل الإمام في الصلاة) للعيد ولا يسن التكبير ليلة عيد الفطر عقب الصلوات، ولكن النووي في الأذكار اختار أنه سنة. ثم شرع في التكبير المقيد فقال
+<br/><br/>
+و- يكبر (في) عيد (الأضحى خلف الصلوات المفروضات) من مؤداة وفائتة وكذا خلف راتبة، ونفل مطلق وصلاة جنازة (من صبح يوم عرفة إلى العصر من آخر أيام التشريق) وصيغة التكبير: الله أكبر الله أكبر الله أكبر لا إله إلا الله والله أكبر الله أكبر ولله الحمد الله أكبر كبيراً والحمد لله كثيراً وسبحان الله بكرة وأصيلاً، لا إله إلا الله وحده صدق وعده ونصر عبده وأعز جنده وهزم الأحزاب وحده.
+
+
+
+</font></div>
+
+<hr><br/>
+
+
+
+
+<b><center>Hukum Sholat Hari Raya</b></center>
+
+<p>(Fasal) sholat dua hari raya, yaitu hari raya Idul Fitri dan Idul Adlha hukumnya adalah sunnah muakkad.</p> 
+
+<p>Sholat hari raya disunnahkan untuk berjama’ah bagi orang sendirian, musafir, orang merdeka, budak, huntsa dan wanita yang tidak cantik dan tidak dzatul haiat<sup>1</sup>.</p> 
+
+<p>Sedangkan untuk wanita lanjut usia, maka sunnah menghadiri sholat hari raya dengan mengenakan pakaian keseharian tanpa memakai wewangian.</p> 
+
+<p>Waktu pelaksanaan sholat Ied adalah di antara terbitnya matahari dan tergelincirnya.</p> <br/>
+
+<b><center>Cara Pelaksanaan Sholat Ied</b></center>
+
+<p>Sholat ied adalah sholat dua rakaat, yaitu melakukan takbiratul ihram dua rakaat tersebut dengan niat sholat idul Fitri atau idul Adha dan membaca do’a iftitah.</p> 
+
+<p>Di dalam rakaat pertama membaca takbir tujuh kali selain takbiratul ihram, kemudian membaca ta’awudz, membaca surat Al Fatihah, dan membaca surat setelah Al Fatihah dengan mengeraskan suara.</p> 
+
+<p>Di dalam rakaat kedua membaca takbir lima kali selain takbir untuk berdiri, kemudian membaca ta’awudz, lalu membaca surat Al Fatihah dan surat Iqtarabat dengan mengeraskan suara.</p> <br/>
+
+<b><center>Khutbah Lebaran (Ied)</b></center>
+
+<p>Setelah melaksanakan sholat dua rakaat, sunnah melakukan dua khutbah dengan membaca takbir sembilan kali secara terus menerus di permulaan khutbah pertama, dan membaca takbir tujuh kali secara terus menerus di permulaan khutbah kedua.</p> 
+
+<p>Seandainya kedua khutbah dipisah dengan bacaan tahmid, tahlil dan puji-pujian, maka hal itu adalah baik.</p> <br/>
+
+<b><center>Pembagian Takbir Hari Raya</b></center>
+
+<p>Takbir terbagi menjadi dua, takbir mursal, yaitu takbir yang tidak dilaksanakan setelah sholat. Dan takbir muqayyad, yaitu takbir yang dilakukan setelah pelaksanaan sholat.</p> 
+
+<p>Mushannif memulai dengan menjelaskan takbir yang pertama. Beliau berkata, “bagi setiap orang laki-laki, wanita, orang yang berada di rumah, dan musafir, sunnah membaca takbir di rumah-rumah, jalan-jalan, masjid-masjid dan pasar-pasar, mulai dari terbenamnya matahari malam hari raya, maksudnya hari raya Idul Fitri.”</p> 
+
+<p>Kesunnahan takbir ini tetap berlangsung hingga imam mulai melaksanakan sholat ied.</p> 
+
+<p>Tidak disunnahkan membaca takbir setelah pelaksanaan sholat di malam hari raya Idul Fitri. Akan tetapi di dalam kitab al Adzkar, imam an Nawawi lebih memilih bahwa takbir tersebut hukumnya sunnah.</p> 
+
+<p>Kemudian mushannif beranjak menjelaskan takbir muqayyad. Beliau berkata, “sunnah membaca takbir saat hari raya Idul Adha setelah melaksanakan sholat-sholat fardlu”, ada’ dan qadla’.</p> 
+
+<p>Begitu juga setelah sholat rawatib, sholat sunnah mutlak dan sholat jenazah, mulai waktu Subuh hari Arafah hingga Ashar di akhir hari Tasyrik.</p> 
+
+<p>Bentuk bacaan takbir adalah,</p> 
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+اللهُ أَكْبَرُ اللهُ أَكْبَرُ اللهُ أَكْبَرُ لَا إِلَهَ إِلاَّ اللهُ وَ اللهُ أَكْبَرُ اللهُ أَكْبَرُ وَلِلهِ الْحَمْدُ، اللهُ أَكْبَرُ كَبِيْرًا وَالْحَمْدُ لِلهِ كَثِيْرًا وَسُبْحَانَ اللهِ بُكْرَةً وَأَصِيْلًا لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ صَدَّقَ وَعْدَهُ وَنَصَرَ عَبْدَهُ وَأَعَزَّ جُنْدَهُ وَهَزَمَ الْأَحْزَابَ وَحْدَهُ
+</font></div><br/>
+<p>“Allah Maha Besar, Allah Maha Besar, Allah Maha Besar. Tidak ada tuhan selain Allah. Allah Maha Besar. Allah Maha Besar, dan segala puji hanya milik Allah. Allah Maha Besar dengan sesungguhnya. Dan segala puji yang banyak hanyak untuk Allah. Maha Suci Allah di waktu pagi dan sore. Tidak ada tuhan selain Allah, hanya Allah. Yang Telah membenarkan janji-Nya, Menolong hamba-Nya, memenangkan pasukan-Nya dan mengalahkan musuh-musuhnya hanya dengan sendirian ” </p> 
+
+
+</p>
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Maksudnya wanita yang berparas cantik atau yang banyak tingkah tidak disunahkan sholat ‘Id secara berjamaah
+di tempat pelaksanaan jamaah sholat ‘Id. Lihat Tausyikh, Darul Minhaj, hal. 132. Ini berarti bahwa wanita yang
+berparas cantik dan yang banyak tingkah tetap disunahkan melakukan sholat ‘Id secara sendiri atau secara
+berjamaah namun di rumahnya.</p>
+</phr>
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="13.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 14</font>
+	</a>
+	
+	<a href="15.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum-hukum Shalat</a></li>
+    <li><a href="2.html">2. Syarat Orang yang Wajib Shalat</a></li>
+    <li><a href="3.html">3. Syarat Sebelum Masuk Shalat</a></li>
+	<li><a href="4.html">4. Rukun Shalat</a></li>
+	<li><a href="5.html">5. Sunnah Sholat</a></li>
+	<li><a href="6.html">6. Beda Laki-laki dan Perempuan dalam Shalat</a></li>
+	<li><a href="7.html">7. 11 Pembatal Shalat</a></li>
+	<li><a href="8.html">8. Jumlah Rakaat Shalat</a></li>
+	<li><a href="9.html">9. Yang Tertinggal dalam Shalat</a></li>
+	<li><a href="10.html">10. Waktu yang Makruh untuk Shalat</a></li>
+	<li><a href="11.html">11. Shalat Berjamaah</a></li>
+	<li><a href="12.html">12. Shalat Qashar dan Jamak</a></li>
+	<li><a href="13.html">13. Shalat Jumat</a></li>
+	<li><a href="14.html">14. Shalat Idul Fitri dan Idul Adha</a></li>
+	<li><a href="15.html">15. Shalat Gerhana Matahari dan Bulan</a></li>
+	<li><a href="16.html">16. Shalat Istisqa (Minta Hujan)</a></li>
+	<li><a href="17.html">17. Bab Shalat Khauf (Saat Perang)</a></li>
+	<li><a href="18.html">18. Pakaian Sutra dan Cincin Emas</a></li>
+	<li><a href="19.html">19. Jenazah: Cara Memandikan, Mengkafani, Menyolati dan Memendamnya</a></li>
+</ul>
+
+</div>
+
+
+<h1>Cara Sholat Khauf<br/> (Saat Perang)</h1><br/><br/>
+
+
+	
+
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+فصل: في كيفية صلاة الخوف. وإنما أفردها المصنف عن غيرها من الصلوات بترجمة، لأنه يحتمل في إقامة الفرض في الخوف ما لا يحتمل في غيره (وصلاة الخوف) أنواع كثيرة تبلغ ستة أضرب كما في صحيح مسلم اقتصر المصنف منها (على ثلاثة أضرب:
+<br/><br/>
+أحدها أن يكون العدو في غير جهة القبلة- وهو قليل وفي المسلمين كثرة بحيث تقاوم كل فرقة منهم العدو (فيفرقهم الإمام فرقتين فرقة تقف في وجه العدو) تحرسه (وفرقة تقف خلفه) أي الإمام (فيصلي بالفرقة التي خلفه ركعة ثم) بعد قيامه للركعة الثانية (تتم لنفسها) بقية صلاتها (وتمضي) بعد فراغ صلاتها (إلى وجه العدو) تحرسه (وتأتي الطائفة الأخرى) التي كانت حارسة في الركعة الأولى. (فيصلي) الإمام (بها ركعة) فإذا جلس الإمام للتشهد تفارقه (وتتم لنفسها) ثم ينتظرها الإمام (ويسلم بها) وهذه صلاة رسول الله بذات الرقاع، سميت بذلك لأنهم رقعوا فيها راياتهم وقيل غير ذلك
+<br/><br/>
+والثاني أن يكون في جهة القبلة- في مكان لا يسترهم عن أعين المسلمين شيء، وفي المسلمين كثرة تحتمل تفرقهم (فيصفهم الإمام صفين) مثلاً (ويحرم بهم) جميعاً (فإذا سجد) الإمام في الركعة الأولى (سجد معه أحد الصفين) سجدتين (ووقف الصف الآخر يحرسهم فإذا رفع) الإمام رأسه (سجدوا ولحقوه) ويتشهد الإمام بالصفين ويسلم بهم وهذه صلاة رسول الله بعسفان، وهي قرية في طريق الحاج المصري بينها وبين مكة مرحلتان، سميت بذلك لعسف السيول فيها.
+<br/><br/>
+والثالث أن يكون في شدة الخوف والتحام الحرب- هو كناية عن شدة الاختلاط بين القوم بحيث يلتصق لحم بعضهم ببعض، فلا يتمكنون من ترك القتال ولا يقدرون على النزول إن كانوا ركباناً، ولا على الانحراف إن كانوا مشاة (فيصلي) كل من القوم (كيف أمكنه راجلاً) أي ماشياً (أو راكباً مستقبل القبلة وغير مستقبل لها) ويعذرون في الأعمال الكثيرة في الصلاة كضربات متوالية.
+
+</font></div>
+
+<hr><br/>
+
+
+
+
+<b><center>Pasal menjelaskan tata cara sholat khauf</b></center>
+
+
+<p>Mushannif menyendirikan penjelasan sholat ini tidak beserta dengan sholat-sholat yang lain, karena sesungguhnya ada hal-hal yang ditolelir di dalam pelaksanaan sholat fardlu saat khauf yang tidak ditolelir saat tidak khauf</p> <br/>
+
+<p>Macam-Macam Sholat Khauf</b></center>
+
+<p>Sholat khauf ada beberapa macam yang cukup banyak hingga mencapai enam macam sebagaimana yang terdapat di dalam kitab Shahih Muslim.</p> 
+
+<p>Dari semuanya, mushannif hanya menjelaskan tiga macam saja.</p> <br/>
+
+<b><center>Sholat Dzatirriqa’</i></b></center>
+
+<p>Salah satunya adalah posisi musuh berada di selain arah kiblat, dan jumlah mereka terhitung sedikit sedangkan jumlah orang muslim relatif banyak, sekira setiap kelompok dari pihak muslim bisa sebanding dengan musuh.</p> 
+
+<p>Maka seorang imam membagi pasukan muslim menjadi dua kelompok, satu kelompok berada di arah musuh untuk memantau mereka, dan satu kelompok berdiri di belakang imam.</p> 
+
+<p>Maka imam melaksanakan sholat satu rakaat bersama kelompok yang berada di belakangnya. Kemudian setelah selesai rakaat pertama, kelompok tersebut menyempurnakan sisa sholatnya sendiri, dan setelah selesai langsung berangkat keposisi arah musuh untuk memantaunya.</p> 
+
+<p>Kemudian kelompok yang satunya datang, yaitu kelompok yang memantau musuh saat pelaksanaan rakaat pertama.</p> 
+
+<p>Kemudian imam melaksanakan satu rakaat bersama dengan kelompok tersebut. Ketika imam sedang melaksanakan duduk tasyahud, maka kelompok tersebut memisahkan diri dan menyempurnakan sholatnya sendiri, kemudian imam menanti mereka dan melakukan salam bersama mereka.</p> 
+
+<p>Ini adalah bentuk sholat yang dilaksanakan Rosulullah Saw di daerah Dzatirriqa’. Disebut dengan nama ini, karena sesungguhnya para sahabat menambal bendera mereka di sana. Namun ada yang mengatakan alasan yang lain.</p> <br/>
+
+<b><center><i>Sholat al ‘Asfan</i></b></center>
+
+<p>Bentuk sholat khauf kedua adalah posisi musuh berada di arah kiblat, di tempat yang bisa terlihat oleh pandangan orang muslim. Jumlah pasukan muslim cukup banyak yang mungkin untuk dibagi.</p> 
+
+<p>Maka imam membagi mereka menjadi dua shof misalnya. Imam melakukan takbiratul ihram bersama mereka semuanya.</p> 
+
+<p>Ketika imam sujud di rakaat pertama, maka salah satuh shof melakukan sujud dua kali bersamanya, sedangkan shof yang lain tetap berdiri mengawasi musuh.</p> 
+
+<p>Ketika imam mengangkat kepala, maka shof yang lain ini melakukan sujud dan menyusul imam.</p> 
+
+<p>Imam melakukan tasyahud dan salam bersama kedua shof tersebut.</p> 
+
+<p>Dan ini adalah sholat ang dilakukan oleh Rosulullah Saw di daerah ‘Asfan, yaitu suatu desa yang berada di jalur jama’ah haji yang datang dari dari Mesir, dan berjarak dua marhalah dari Makkah.</p> 
+
+<p>Daerah tersebut diberi nama demikian karena di sana terlalu sering terjadi banjir yang besar.</p> <br/>
+
+<b><center><i>Sholat Syiddah Al Khauf</i></b></center>
+
+<p>Bentuk sholat khauf ke tiga adalah saat berada dalam keadaan sangat genting dan berkecamuknya peperangan.</p> 
+
+<p>“iltihamul harbi” adalah bentuk kiasan dari sangat bercampurnya antara kaum sekira badan sebagian dari mereka bertemu dengan badan sebagian yang lain, sehingga mereka tidak bisa menghindar dari peperangan dan tidak mampu untuk turun dari kendaraan jika naik kendaraan dan tidak mampu berpaling jika mereka berjalan kaki.</p> 
+
+<p>Sehingga masing-masing pasukan melakukan sholat semampunya, berjalan atau naik kendaraan, menghadap kiblat ataupun tidak menghadap kiblat.</p> 
+
+<p>Mereka dimaafkan di dalam melakukan gerakan-gerakan yang cukup banyak saat sholat seperti beberapa pukulan secara terus menerus.</p> 
+</p>
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="16.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 17</font>
+	</a>
+	
+	<a href="18.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum-hukum Shalat</a></li>
+    <li><a href="2.html">2. Syarat Orang yang Wajib Shalat</a></li>
+    <li><a href="3.html">3. Syarat Sebelum Masuk Shalat</a></li>
+	<li><a href="4.html">4. Rukun Shalat</a></li>
+	<li><a href="5.html">5. Sunnah Sholat</a></li>
+	<li><a href="6.html">6. Beda Laki-laki dan Perempuan dalam Shalat</a></li>
+	<li><a href="7.html">7. 11 Pembatal Shalat</a></li>
+	<li><a href="8.html">8. Jumlah Rakaat Shalat</a></li>
+	<li><a href="9.html">9. Yang Tertinggal dalam Shalat</a></li>
+	<li><a href="10.html">10. Waktu yang Makruh untuk Shalat</a></li>
+	<li><a href="11.html">11. Shalat Berjamaah</a></li>
+	<li><a href="12.html">12. Shalat Qashar dan Jamak</a></li>
+	<li><a href="13.html">13. Shalat Jumat</a></li>
+	<li><a href="14.html">14. Shalat Idul Fitri dan Idul Adha</a></li>
+	<li><a href="15.html">15. Shalat Gerhana Matahari dan Bulan</a></li>
+	<li><a href="16.html">16. Shalat Istisqa (Minta Hujan)</a></li>
+	<li><a href="17.html">17. Bab Shalat Khauf (Saat Perang)</a></li>
+	<li><a href="18.html">18. Pakaian Sutra dan Cincin Emas</a></li>
+	<li><a href="19.html">19. Jenazah: Cara Memandikan, Mengkafani, Menyolati dan Memendamnya</a></li>
+</ul>
+
+</div>
+
+
+<h1>Rukun-rukun Shalat</h1><br/><br/>
+
+
+	
+
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+
+فصل: في أركان الصلاة. وتقدم معنى الصلاة لغةً وشرعاً (وأركان الصلاة ثمانية عشر ركناً) أحدها (النية) وهي قصد الشيء مقترناً بفعله ومحلها القلب، فإن كانت الصلاة فرضاً وجب نية الفرضية وقصد فعلها، وتعيينها من صبح أو ظهر مثلاً أو كانت الصلاة نفلاً ذات وقت كراتبة أو ذات سبب كالاستسقاء، وجب قصد فعلها وتعيينه لا نية النفلية (و) الثاني (القيام مع القدرة) عليه فإن عجز عن القيام قعد كيف شاء. وقعوده مفترشاً أفضل
+<br/><br/>
+و- الثالث (تكبيرة الإحرام) فيتعين على القادر بالنطق بها بأن يقول الله أكبر، فلا يصح الرحمن أكبر ونحوه، ولا يصح فيها تقديم الخبر على المبتدإ كقوله أكبر الله، ومن عجز عن النطق بها بالعربية ترجم عنها بأي لغة شاء، ولا يعدل عنها إلى ذكر آخر، ويجب قرن النية بالتكبير، وأما النووي فاختار الاكتفاء بالمقارنة العرفية بحيث يعد عرفاً أنه مستحضر للصلاة
+<br/><br/>
+و - الرابع (قراءة الفاتحة) أو بدلها لمن لم يحفظها فرضاً كانت الصلاة أو نفلاً (وبسم الله الرحمن الرحيم آية منها) كاملة ومن أسقط من الفاتحة حرفاً أو تشديدة، أو أبدل حرفاً منها بحرف لم تصح قراءته ولا صلاته إن تعمد، وإلا وجب عليه إعادة القراءة، ويجب ترتيبها بأن يقرأ آياتها على نظمها المعروف، ويجب أيضاً موالاتها بأن يصل بعض كلماتها ببعض من غير فصل إلا بقدر التنفس، فإن تخلل الذكر بين موالاتها قطعها، إلا أن يتعلق الذكر بمصلحة الصلاة كتأمين المأموم في أثناء فاتحته لقراءة إمامه، فإنه لا يقطع الموالاة، ومن جهل الفاتحة وتعذرت عليه لعدم معلم مثلاً وأحسن غيرها من القرآن، وجب عليه سبع آيات متوالية عوضاً عن الفاتحة أو متفرقة فإن عجز عن القرآن أتى بذكر بدلاً عنها بحيث لا ينقص عن حروفها، فإن لم يحسن قرآناً ولا ذكراً وقف قدر الفاتحة، وفي بعض النسخ وقراءة الفاتحة بعد بسم الله الرحمن الرحيم، وهي آية منها
+<br/><br/>
+و- الخامس (الركوع) وأقل فرضه لقائم قادر على الركوع معتدل الخلقة سليم يديه وركبتيه أن ينحني بغير انخناس قدر بلوغ راحتيه ركبتيه، ولو أراد وضعهما عليهما، فإن لم يقدر على هذا الركوع انحنى مقدوره وأومأ بطرفه، وأكمل الركوع تسوية الراكع ظهره وعنقه بحيث يصيران كصفيحة واحدة، ونصب ساقيه وفخذيه وأخذ ركبتيه بيديه
+<br/><br/>
+و - السادس (الطمأنينة) وهي سكون بعد حركة (فيه) أي الركوع والمصنف يجعل الطمأنينة في الأركان ركناً مستقلاً ومشى عليه النووي في التحقيق، وغير المصنف يجعلها هيئة تابعة للأركان (و) السابع (الرفع) من الركوع (والاعتدال) قائماً على الهيئة التي كان عليها قبل ركوعه من قيام قادر وقعود عاجز عن القيام
+<br/><br/>
+و- الثامن (الطمأنينة فيه) أي الاعتدال (و) التاسع (السجود) مرتين في كل ركعة، وأقله مباشرة بعض جبهة المصلي موضع سجوده من الأرض أو غيرها، وأكمله أن يكبر لهويه للسجود بلا رفع يديه، ويضع ركبتيه ثم يديه ثم جبهته وأنفه (و) العاشر (الطمأنينة فيه) أي السجود بحيث ينال موضع سجوده ثقل رأسه، ولا يكفي إمساس رأسه موضع سجوده، بل يتحامل بحيث لو كان تحته قطن مثلاً لانكبس، وظهر أثره على يد لو فرضت تحته
+<br/><br/>
+و- الحادي عشر (الجلوس بين السجدتين) في كل ركعة سواء صلى قائماً أو مضطجعاً، وأقله سكون بعد حركة أعضائه، وأكمله الزيادة على ذلك بالدعاء الوارد فيه، فلو لم يجلس بين السجدتين، بل صار إلى الجلوس أقرب لم يصح (و) الثاني عشر (الطمأنينة فيه) أي الجلوس بين السجدتين (و) الثالث عشر (الجلوس الأخير) أي الذي يعقبه السلام (و) الرابع عشر (التشهد فيه) أي الجلوس الأخير وأقل التشهد التحيات لله سلام عليك أيها النبي ورحمة الله وبركاته سلام علينا وعلى عباد الله الصالحين، أشهد أن لا إله إلاّ الله وأشهد أن محمداً رسول الله
+<br/><br/>
+و- الخامس عشر (الصلاة على النبي فيه) أي الجلوس الأخير بعد الفراغ من التشهد، وأقل الصلاة على النبي اللهم صل على محمد، وأشعر كلام المصنف أن الصلاة على الآل لا تجب وهو كذلك بل هي سنة (و) السادس عشر (التسليمة الأولى) ويجب إيقاع السلام حال القعود وأقله السلام عليكم مرة واحدة، وأكمله السلام عليكم ورحمة الله مرتين يميناً وشمالاً
+<br/><br/>
+و- السابع عشر (نية الخروج من الصلاة) وهذا وجه مرجوح وقيل لا يجب ذلك، أي نية الخروج وهذا الوجه هو الأصح (و) الثامن عشر (ترتيب الأركان) حتى بين التشهد الأخير والصلاة على النبي فيه وقوله (على ما ذكرناه) يستثنى منه وجوب مقارنة النية لتكبيرة الإحرام ومقارنة الجلوس الأخير للتشهد والصلاة على النبي (و) الصلاة (سننها قبل الدخول فيها شيئان الأذان) وهو لغة الإعلام وشرعاً ذكر مخصوص للإعلام بدخول وقت صلاة مفروضة، وألفاظه مثنى إلا التكبير أوله فأربع، وإلا التوحيد آخره فواحد (والإقامة) وهي مصدر أقام ثم سمي به الذكر المخصوص، لأنه يقيم إلى الصلاة وإنما يشرع كل من الأذان والإقامة للمكتوبة، وأما غيرها فينادى لها الصلاة جامعة
+
+
+
+</font></div>
+
+<hr><br/>
+
+
+
+
+<b><center>Yang Wajib Dilakukan Saat Shalat Ada 18</center></b>
+
+<p>(Fasal) menjelaskan rukun-rukun sholat. Sedangkan pengertian sholat secara bahasa dan istilah syara’ sudah dijelaskan di depan.<p>
+
+<p>Rukun-rukun sholat ada delapan belas rukun.</p><br/>
+
+<b><center>Niat</center></b>
+
+<p>Salah satunya adalah niat. Niat adalah menyengaja sesuatu berbarengan dengan melaksanakan-nya. Tempat niat adalah hati.</p>
+
+<p>Ketika sholat fardlu, maka wajib niat fardlu, menyengaja melaksanakannya dan menentukannya semisal Subuh atau Dhuhur.</p>
+
+<p>Atau sholat sunnah yang memiliki waktu tertentu seperti sholat rawatib atau sholat yang memiliki sebab seperti sholat istisqa’, maka wajib menyengaja melaksanakannya dan menentukannya, tidak wajib niat sunnah.</p>
+
+<b><center>Berdiri dalam Sholat</center></b>
+
+<p>Rukun kedua adalah berdiri jika mampu melakukannya.</p>
+
+<p>Jika tidak mampu berdiri, maka wajib duduk dengan posisi yang ia kehendaki, namun duduk iftiras adalah yang lebih utama.</p><br/>
+
+<b><center>Takbiratul Ihram</center></b>
+
+<p>Rukun ketiga adalah takbiratul ihram. Bagi yang mampu, maka wajib mengucapkan takbiratul ihram, yaitu dengan mengucapkan “Allahu Akbar”.</p>
+
+<p>Maka tidak sah jika dengan mengucapkan “Ar Rahmanu Akbar” dan sesamanya. Dan dalam takbiratul ihram, tidak sah mendahulukan khabar sebelum mubtada’-nya seperti ucapan seseorang “Akbarullahu”.</p>
+
+<p>Barang siapa tidak mampu mengucapkan takbiratul ihram dengan bahasa arab, maka wajib menterjemahnya dengan bahasa yang ia kehendaki, dan tidak diperkenankan baginya untuk berpindah dari takbiratul ihram kepada bentuk dzikiran yang lain -semisal lafadz “alhamdulillah”-.</p>
+
+<p>Dan wajib membarengkan niat dengan pelaksanaan takbiratul ihram.</p>
+
+<p>Adapun imam an Nawawi, maka beliau memilih bahwa cukup dengan hanya berbarengan secara ‘urf, yaitu sekira secara ‘urf ia sudah dianggap menghadirkan sholat -di dalam hati saat takbiratul ihram-.</p><br/>
+
+<b><center>Membaca Al Fatihah</center></b>
+
+<p>Rukun ke empat adalah membaca Al Fatihah, atau gantinya bagi orang yang tidak hafal Al Fatihah, baik sholat fardlu ataupun sunnah.</p>
+
+<p>Bismillahirrahmanirrahim adalah satu ayat penuh dari surat Al Fatihah.</p>
+
+<p>Barang siapa tidak membaca satu huruf atau satu tasydid dari surat al Fatihah, atau mengganti satu huruf dengan huruf yang lain, maka bacaannya tidak sah, begitu juga sholatnya jika memang sengaja melakukannya. Jika tidak sengaja, maka bagi dia wajib mengulangi bacaannya.
+
+<p>Wajib membaca surat Al Fatihah tertib. Yaitu dengan membaca ayat-ayatnya sesuai dengan urutan yang sudah diketahui.</p>
+
+<p>Dan juga wajib membacanya secara muwallah (terus menerus), yaitu sebagian kalimat-kalimat Al Fatihah bersambung dengan sebagian yang lain tanpa ada pemisah kecuali hanya sekedar mengambil nafas.</p>
+
+<p>Sehingga, ketika di antara muwalah terpisah / diselah-selahi dzikiran yang lain, maka hal itu memutus bacaan muwalah surat Al Fatihah.</p>
+
+<p>Kecuali bacaan dzikiran tersebut berhubungan dengan kemaslahatan sholat, seperti bacaan “amin” yang dilakukan makmum di tengah-tengah bacaan Al Fatihahnya karena bacaan Al Fatihah imamnya, maka sesungguhnya bacaan “amin” tersebut tidak sampai memutus muwallah.</p>
+
+<p>Barang siapa tidak tahu atau kesulitan membaca surat Al Fatihah karena tidak ada pengajar semisal, dan ia bisa membaca surat yang lain dari Al Qur’an, maka bagi dia wajib membaca tujuh ayat secara runtut ataupun tidak sebagai ganti dari surat Al Fatihah.</p>
+
+<p>Jika tidak mampu membaca Al Qur’an, maka wajib bagi dia untuk membaca dzikir sebagai ganti dari Al Fatihah, sekira huruf dzikiran tersebut tidak kurang dari jumlah huruf Al Fatihah.</p>
+
+<p>Jika tidak bisa membaca Al Qur’an dan dzikiran, maka wajib bagi dia untuk berdiri selama kadar ukuran membaca Al Fatihah.</p>
+
+<p>Dalam sebagian redaksi diungkapkan dengan bahasa “dan membaca Al Fatihah setelah bismillahirrahmanirrahim, dan basmalah adalah satu ayat dari Al Fatihah.”</p><br/>
+
+<b><center>Ruku’</center></b>
+
+<p>Rukun ke lima adalah ruku’.</p>
+
+<p>Minimal fardlunya ruku’ bagi orang yang melakukan sholat dengan berdiri, mampu melakukan ruku’, berfisik normal, dan selamat / sehat kedua tangan dan kedua lututnya, adalah membungkuk tanpa membusungkan dada (degek : jawa) dengan ukuran sekira kedua telapak tangan bisa menggapai kedua lutut seandainya ia hendak meletakkan kedua telapak tangannya di atas kedua lututnya.</p>
+
+<p>Jika tidak mampu melakukan ruku’ seperti ini, maka wajib bagi dia membungkuk semampunya dan memberi isyarah dengan matanya.</p>
+
+<p>Ruku’ yang paling sempurna adalah orang yang melakukan ruku’ meluruskan punggung dan lehernya sekira keduanya seperti satu papan yang lurus, menegakkan kedua betisnya, dan memegang kedua lutut dengan kedua tangannya.</p><br/>
+
+<b><center>Tumakninah</center></b>
+
+<p>Rukun ke enam adalah thuma’ninah di dalam ruku’. Thuma’ninah adalah diam setelah bergerak.</p>
+
+<p>Mushannif menjadikan thuma’ninah sebagai salah satuh rukun dan rukun-rukunnya sholat. Dan imam an Nawawi berjalan pada pendapat ini di dalam kitab at Tahqiq.</p>
+
+<p>Sedangkan selain mushannif menjadikan thuma’ninah sebagai haiat yang menyertai sholat.</p><br/>
+
+<b><center>I’tidal</center></b>
+
+<p>Rukun ke tujuh adalah bangun dari ruku’ dan i’tidal berdiri tegap sesuai keadaan sebelum ruku’, yaitu berdiri bagi orang yang melakukan sholat dengan berdiri dan duduk bagi orang yang tidak mampu berdiri.</p>
+
+<p>Rukun ke delapan adalah thuma’ninah di dalam i’tidal.</p><br/>
+
+<b><center>Sujud</center></b>
+
+<p>Rukun ke sembilan adalah sujud dua kali di dalam setiap rakaat.</p>
+
+<p>Minimal sujud adalah sebagian kening orang yang sholat menyentuh tempat sujudnya, baik tanah atau yang lainnya.</p>
+
+<p>Sujud yang paling sempurna adalah membaca takbir tanpa mengangkat kedua tangan ketika turun ke posisi sujud, meletakkan kedua lutut, kemudian kedua tangan, lalu kening dan hidungnya.</p>
+
+<p>Rukun ke sepuluh adalah thuma’ninah di dalam sujud, sekira beban kepalanya mengenai tempat sujudnya.</p>
+
+<p>Dan tidak cukup hanya menyentuhkan kepalanya ke tempat sujudnya.</p>
+
+<p>Bahkan harus agak menekannya sekira seandainya ada kapas di bawah kepalanya, niscaya akan tertekan, dan bebannya akan terasa di atas tangan seandainya diletakkan di bawahnya.</p><br/>
+
+<b><center>Duduk di Antara Dua Sujud</center></b>
+
+<p>Rukun ke sebelas adalah duduk di antara dua sujud di setiap rakaat, baik sholat dengan berdiri, duduk atau tidur miring.</p>
+
+<p>Minimalnya adalah diam setelah bergeraknya anggota-anggota badannya. Dan yang paling sempurna adalah menambahi ukuran tersebut dengan do’a yang datang dari Rosulullah Saw saat melakukannya.</p>
+
+<p>Sehingga, seandainya ia tidak duduk di antara dua sujud, bahkan posisinya hanya lebih dekat pada posisi duduk, maka duduk yang ia lakukan tidak sah.<sup>1</sup></p>
+
+<p>Rukun ke dua belas adalah thuma’ninah di dalam duduk di antara dua sujud.</p>
+
+<b><center>Duduk Terakhir dan Tasyahud</center></b>
+
+<p>Rukun ke tiga belas adalah duduk yang terakhir, maksudnya duduk yang diiringi oleh salam.</p>
+
+<p>Rukun ke empat belas adalah tasyahud di dalam duduk yang terakhir.</p>
+
+<p>Minimal tasyahud adalah</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+"التَّحِيَّاتُ لِلهِ سَلَامٌ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ سَلَامٌ عَلَيْنَا وَعَلَى عِبَادِ اللهِ الصَّالِحِيْنَ أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللهِ"
+</font></div><br/>
+<p>“Segala hormat milik Allah, semoga keselamatan, rahmat Allah dan keberkahan-Nya atas Engkau wahai Nabi. Semoga keselamatan atas kami dan hamba-hamba Allah yang sholih. Saya bersaksi tidak ada tuhan selain Allah, dan saya bersaksi sesungguhnya Muhammad adalah utusan Allah”</p>
+
+<p>Tasyahud yang paling sempurna adalah</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+"التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلهِ السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللهِ الصَّالِحِيْنَ أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللهِ".</font></div><br/>
+<p>“kehormatan yang diberkahi dan rahmat yang baik hanya milik Allah. Keselamatan, rahmat Allah dan keberkahan-Nya semoga atas Engkau wahai Nabi. Keselamatan semoga atas kami dan hamba-hamba Allah yang sholih. Saya bersaksi tidak ada tuhan selain Allah. Dan saya bersaksi nabi Muhammad adalah utusan Allah.”</p><br/>
+
+<b><center>Bacaan Sholawat</center></b>
+
+<p>Rukun ke lima belas adalah membaca sholawat untuk baginda Nabi Saw di dalamnya, maksudnya di dalam duduk yang terakhir setelah selesai membaca tasyahud.</p>
+
+<p>Minimal bacaan sholawat untuk baginda Nabi Saw adalah<br/>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+" اللهم صَلِّ عَلَى مُحَمَّدٍ"</font></div><br/>
+<p>“ya Allah, berikanlah rahmat kepada Nabi Muhammad”</p>
+
+<p>Perkataan mushannif di atas memberitahukan bahwa membaca sholawat untuk keluarga Nabi Saw hukumnya tidak wajib, dan memang demikian bahkan hukumnya adalah sunnah.</p><br/>
+
+<b><center>Salam, Niat Keluar Sholat dan Tertib</center></b>
+
+<p>Rukun ke enam belas adalah membaca salam yang pertama.</p>
+
+<p>Dan wajib mengucapkan salam dalam posisi duduk.</p>
+
+<p>Minimal ucapan salam adalah ucapan <font size="5" face="KFGQPC Uthman Taha Naskh Bold">"السَّلَامُ عَلَيْكُمْ" </font>satu kali. Dan ucapan salam yang paling sempurna adalah <font size="5" face="KFGQPC Uthman Taha Naskh Bold">"السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ" </font>dua kali, yaitu ke kanan dan ke kiri.</p>
+
+<p>Rukun ke tujuh belas adalah niat keluar dari sholat. Dan ini adalah pendapat yang marjuh (lemah).</p>
+
+<p>Ada yang mengatakan bahwa niat keluar dari sholat hukumnya tidak wajib, dan inilah pendapat al ashah.</p>
+
+<p>Rukun ke delapan belas adalah melakukan rukun-rukun sholat secara tertib, hingga di antara tasyahud yang terakhir dan bacaan sholat untuk baginda Nabi Saw di dalam tasyahud akhir.</p>
+
+<p>Ungkapan mushannif “sesuai dengan apa yang aku jelaskan” mengecualikan kewajiban membarengkan niat dengan takbiratul ihram, dan membarengkan duduk terakhir dengan tasyahud dan bacaan sholawat untuk baginda Nabi Saw.</p>
+
+</p>
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Karena dalam duduk ini disyaratkan harus duduk tegap. Sehingga jika posisinya berada antara duduk dan sujud
+maka tidak sah sebab tidak tegap. Lihat Tausyikh, Darul Minhaj, hal. 95.</p>
+
+
+
+</phr>
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="3.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 4</font>
+	</a>
+	
+	<a href="5.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum-hukum Shalat</a></li>
+    <li><a href="2.html">2. Syarat Orang yang Wajib Shalat</a></li>
+    <li><a href="3.html">3. Syarat Sebelum Masuk Shalat</a></li>
+	<li><a href="4.html">4. Rukun Shalat</a></li>
+	<li><a href="5.html">5. Sunnah Sholat</a></li>
+	<li><a href="6.html">6. Beda Laki-laki dan Perempuan dalam Shalat</a></li>
+	<li><a href="7.html">7. 11 Pembatal Shalat</a></li>
+	<li><a href="8.html">8. Jumlah Rakaat Shalat</a></li>
+	<li><a href="9.html">9. Yang Tertinggal dalam Shalat</a></li>
+	<li><a href="10.html">10. Waktu yang Makruh untuk Shalat</a></li>
+	<li><a href="11.html">11. Shalat Berjamaah</a></li>
+	<li><a href="12.html">12. Shalat Qashar dan Jamak</a></li>
+	<li><a href="13.html">13. Shalat Jumat</a></li>
+	<li><a href="14.html">14. Shalat Idul Fitri dan Idul Adha</a></li>
+	<li><a href="15.html">15. Shalat Gerhana Matahari dan Bulan</a></li>
+	<li><a href="16.html">16. Shalat Istisqa (Minta Hujan)</a></li>
+	<li><a href="17.html">17. Bab Shalat Khauf (Saat Perang)</a></li>
+	<li><a href="18.html">18. Pakaian Sutra dan Cincin Emas</a></li>
+	<li><a href="19.html">19. Jenazah: Cara Memandikan, Mengkafani, Menyolati dan Memendamnya</a></li>
+</ul>
+
+</div>
+
+
+<h1>Sunnah Sholat</h1><br/><br/>
+
+
+	
+
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+و- سننها (بعد الدخول فيها شيئان التشهد الأول والقنوت في الصبح) أي في اعتدال الركعة الثانية منه، وهو لغة الدعاء وشرعاً ذكر مخصوص، وهو اللهم اهدني فيمن هديت وعافني فيمن عافيت الخ (و) القنوت (في) آخر (الوتر في النصف الثاني من شهر رمضان) وهو كقنوت الصبح المتقدم في محله ولفظه، ولا تتعين كلمات القنوت السابقة، فلو قنت بآية تتضمن دعاء وقصد القنوت حصلت سنة القنوت
+<br/><br/>
+وهيئاتها - أي الصلاة وأراد بهيئاتها ما ليس ركناً فيها، ولا بعضاً يجبر بسجود السهو (خمسة عشر خصلة: رفع اليدين عند تكبيرة الإحرام) إلى حذو منكبيه (و) رفع اليدين (عند الركوع و) عند (الرفع منه ووضع اليمين على الشمال) ويكونان تحت صدره وفوق سرته
+<br/><br/>
+والتوجه - أي قول المصلي عقب التحرم: وجهت وجهي للذي فطر السموات والأرض الخ. والمراد أن يقول المصلي بعد التحرم دعاء الافتتاح هذه الآية أو غيرها مما ورد في الاستفتاح (والاستعاذة) بعد التوجه وتحصل بكل لفظ يشتمل على التعوذ، والأفضل أعوذ بالله من الشيطان الرجيم (والجهر في موضعه) وهوالصبح وأولتا المغرب والعشاء والجمعة والعيدان
+<br/><br/>
+والإسرار في موضعه - وهي ما عدا الذي ذكر (والتأمين) أي قول آمين عقب الفاتحة لقارئها في صلاة وغيرها، لكن في الصلاة آكد ويؤمن المأموم مع تأمين إمامه، ويجهر به (وقراءة السورة بعد الفاتحة) لإمام ومنفرد في ركعتي الصبح وأولتي غيرها، وتكون قراءة السورة بعد الفاتحة، فلو قدم السورة عليها لم تحسب (والتكبيرات عند الخفض) للركوع
+<br/><br/>
+والرفع - أي رفع الصلب من الركوع (وقول سمع الله لمن حمده) حين يرفع رأسه من الركوع. ولو قال من حمد الله سمع له كفى، ومعنى سمع الله لمن حمده تقبل الله منه حمده وجازاه عليه وقول المصلي (ربنا لك الحمد) إذا انتصب قائماً (والتسبيح في الركوع) وأدنى الكمال في التسبيح سبحان ربي العظيم ثلاثاً (و) التسبيح في (السجود) وأدنى الكمال فيه سبحان ربي الأعلى ثلاثاً والأكمل في تسبيح الركوع والسجود مشهور
+<br/><br/>
+ووضع اليدين على الفخذين في الجلوس - للتشهد الأول والأخير (يبسط) اليد (اليسرى) بحيث تسامت رؤوسها الركبة (ويقبض) اليد (اليمنى) أي أصابعها (إلا المسبحة) من اليمنى فلا يقبضها (فإنه يشير بها) رافعاً لها حال كونه (متشهداً) وذلك عند قوله إلا الله ولا يحركها، فإن حركها كره ولا تبطل صلاته في الأصح
+<br/><br/>
+والافتراش في جميع الجلسات - الواقعة في الصلاة كجلوس الاستراحة، والجلوس بين السجدتين، وجلوس التشهد الأول، والافتراش أن يجلس الشخص على كعب اليسرى جاعلاً ظهرها للأرض، وينصب قدمه اليمنى ويضع بالأرض أطراف أصابعها لجهة القبلة
+<br/><br/>
+والتورك في الجلسة الأخيرة - من جلسات الصلاة، وهي جلوس التشهد الأخير والتورك مثل الافتراش، إلا أن المصلي يخرج يساره على هيئتها في الافتراش من جهة يمينه، ويلصق وركه بالأرض، أما المسبوق والساهي فيفترشان ولا يتوركان (والتسليمة الثانية) أما الأولى فسبق أنها من أركان الصلاة.
+
+
+</font></div>
+
+<hr><br/>
+
+
+<b><center>Sunnah Sebelum Shalat</b></center>
+
+<p>Kesunahan-kesunahan sebelum pelaksanaan sholat ada dua perkara.</p><br/>
+
+<b><center>Adzan dan Iqamah</b></center>
+
+<p>Yang pertama, adzan. Secara bahasa adzan berarti memberitahu. Dan secara syara’ adalah dzikiran tertentu guna memberitahu masuknya waktu sholat fardlu.</p>
+
+<p>Lafadz-lafadz adzan dibaca dua kali kecuali lafadz takbir di permulannya maka dibaca empat kali, dan kecuali lafadz tauhid di akhir adzan, maka dibaca satu kali.</p>
+
+<p>Dan yang kedua adalah iqamah. Iqamah adalah bentuk masdar dari fi’il madli aqama. Kemudian dijadikan nama sebuah dzikiran tertentu. Karena sesungguhnya dzikiran tersebut digunakan untuk mendirikan sholat.</p>
+
+<p>Masing-masing dari adzan dan iqamah hanya disyariatkan / dilakukan untuk sholat fardlu. Sedangkan sholat yang lain, maka di kumandangkan dengan bahasa “as shalatu jami’ah”.</p><br/>
+
+<b><center><i><u>Yang Sunnah Saat Shalat</u></i></b></center>
+
+<b><center>Sunnah Ab'adh Saat Sholat ada Dua</b></center>
+
+<p>Kesunahan-kesunahan di dalam sholat ada dua perkara, yaitu tasyahud awal dan qunut di dalam sholat Shubuh, yaitu saat i’tidal rakaat kedua dari sholat Subuh.</p>
+
+<p>Secara bahasa qunut bermakna do’a. Dan secara syara’ adalah dzikiran tertentu, yaitu</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+اللهم اهْدِنِي فَيْمَنْ هَدَيْتَ وَعَافِنِيْ فِيْمَنْ عَافَيْتَ إِلَخْ.
+</div></font><br/>
+<p>Dan qunut di akhir sholat witir pada separuh bulan kedua dari bulan Romadhon.</p>
+
+<p>Qunut di dalam sholat witir ini sama seperti qunutnya sholat Subuh yang sebelumnya di dalam tempat dan lafadznya.</p>
+
+<p>Qunut tidak harus menggunakan kalimat-kalimat qunut yang telah dijelaskan di atas. Sehingga, seandainya seseorang melakukan qunut dengan membaca ayat Al Qur’an yang mengandung doa dan ditujukan untuk qunut, maka kesunahan qunut telah didapat.<sup>1</sup></p><br/>
+
+<b><center>Sunnah Haiat</b></center>
+
+<p>Sunnah haiat-nya sholat ada lima belas perkara. Yang dikehendaki dengan haiat ialah bukan rukun dan bukan sunnah ab’adl yang diganti dengan sujud sahwi -ketika ditinggalkan-.</p>
+
+<p>Yaitu mengangkat kedua tangan saat takbiratul ihram hingga sejajar dengan kedua pundak.</p>
+
+<p>Dan mengangkat kedua tangan ketika hendak dan bangun dari ruku’.</p>
+
+<p>Meletakkan tangan kanan di atas tangan kiri. Dan keduanya berada di bawah dada dan di atas pusar.</p>
+
+<p>Do’a tawajjuh, maksudnya ucapan orang yang sholat setelah takbiratul ihram yang berbunyi,</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+"وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمَوَاتِ وَاْلأَرْضَ الَخ"
+</div></font><br/>
+<p>Yang dikehendaki adalah setelah takbiratul ihram, orang yang sholat membaca doa iftitah, baik ayat di atas ini atau yang lainnya dari bentuk-bentuk doa istiftah yang datang dari Rosulullah Saw.<sup>2</sup></p>
+
+<p>Membaca isti’adzah (ta’awudz) setelah membaca doa tawajjuh.</p>
+
+<p>Kesunnah isti’adzah sudah bisa hasil dengan setiap lafadz yang mengandung ta’awudz (memohon perlindungan Allah).</p>
+
+<p>Dan do’a ta’awudz yang paling utama adalah,</p>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+"أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ"
+</div></font><br/>
+<p>“aku berlindung kepada Allah dari godaan syetan yagn terkutuk.”</p>
+
+<p>Mengeraskan suara di tempatnya, yaitu di dalam sholat Subuh, dua rakaat pertama sholat Maghrib dan Isyat, sholat Jum’at dan dua sholat hari raya.</p>
+
+<p>Memelankan suara di tempatnya, yaitu di selain tempat-tempat yang telah disebutkan di atas.</p>
+
+<p>Ta’min yaitu ucapan “amin” setelah selesai membaca surat Al Fatihah bagi yang membacanya di dalam sholat dan selainya, akan tetapi di dalam sholat lebih dianjurkan.</p>
+
+<p>Seorang makmum sunnah membaca “amin” berbarengan dengan bacaan “amin” imamnya dengan mengeraskan suara.</p>
+
+<p>Membaca surat setelah membaca surat Al Fatihah bagi seorang imam atau orang yang sholat sendiri di dalam dua rakaatnya sholat Subuh dan dua rakaat pertamanya sholat yang lain.</p>
+
+<p>Membaca surat itu dilakukan setelah membaca surat Al Fatihah. Sehingga, seandainya seseorang mendahulukan membaca surat sebelum membaca Al Fatihah, maka bacaan suratnya tidak dianggap.</p>
+
+<p>Bacaan takbir saat turun ke posisi ruku’.</p>
+
+<p>Dan saat mengangkat, maksudnya mengangkat punggung dari posisi ruku’.</p>
+
+<p>Bacaan <font size="5" face="KFGQPC Uthman Taha Naskh Bold">“سَمِعَ اللهُ لِمَن حَمِدَهُ” </font>ketika mengangkat kepala dari ruku’.</p>
+
+<p>Dan seandainya seorang yang sholat mengucapkan <font size="5" face="KFGQPC Uthman Taha Naskh Bold">"مَنْ حَمَدَ اللهَ سَمِعَ لَهُ"</font> “barang siapa memuji Allah, maka semoga Allah mendengar pujiannya”, maka sudah mencukupi.</p>
+
+<p>Makna<font size="5" face="KFGQPC Uthman Taha Naskh Bold"> “سَمِعَ اللهُ لِمَن حَمِدَهُ”</font> adalah semoga Allah menerima pujian darinya dan memberi balasan atas pujiannya.</p>
+
+<p>Ucapan musholi (orang yang sholat) <font size="5" face="KFGQPC Uthman Taha Naskh Bold">“رَبَّنَا لَكَ الْحَمْدُ“</font> ketika sudah berdiri tegap.</p>
+
+<p>Membaca tasbih di dalam ruku’. Minimal sempurna di dalam bacaan tasbih ini adalah <font size="5" face="KFGQPC Uthman Taha Naskh Bold">"سُبْحَانَ رَبِّيَ الْعَظِيْمِ"</font> tiga kali.</p>
+
+<p>Membaca tasbih di dalam sujud. Minimal sempurna di dalam bacaan tasbih ini adalah <font size="5" face="KFGQPC Uthman Taha Naskh Bold">"سُبْحَانَ رَبِّيَ الْأَعْلَى"</font> tiga kali.</p>
+
+<p>Untuk dzikiran yang paling sempurna di dalam bacaan tasbih saat ruku’ dan sujud sudah mashur.</p>
+
+<p>Meletakkan kedua tangan di atas kedua paha saat duduk tasyahud awal dan akhir.</p>
+
+<p>Dengan membuka tangan kiri sekira ujung jemarinya sejajar dengan lutut.</p>
+
+<p>Dan menggenggam tangan kanan, maksudnya jemarinya, kecuali jari telunjuk tangan kanan.</p>
+
+<p>Maka ia tidak menggenggamnya, karena sesungguhnya ia akan menggunakannya untuk isyarah, mengangkatnya saat mengucapkan tasyahud, yaitu ketika mengucapkan kalimat <font size="5" face="KFGQPC Uthman Taha Naskh Bold">"إِلَّا اللهُ"</font>.</p>
+
+<p>Dan hendaknya ia tidak menggerak-gerakan jari telunjuknya. Jika ia menggerak-gerakannya, maka hukumnya makruh dan sholatnya tidak sampai batal menurut pendapat al ashah.</p>
+
+<p>Dan sunnah melakukan duduk iftirasy pada semua posisi duduk yang dilakukan di dalam sholat, seperti duduk istirahah, duduk di antara dua sujud dan duduk tasyahud awal.</p>
+
+<p>Iftirasy adalah seseorang menduduki mata kaki kirinya, memposisikan punggung kaki kirinya pada lantai, menegakkan telapak kaki kanan, dan memposisikan jemari kaki kanannya menempel pada lantai dan menghadap ke kiblat.</p>
+
+<p>Dan sunnah duduk tawarruk saat duduk terakhir dari duduk-duduk di dalam sholat, yaitu duduk tasyahud akhir.</p>
+
+<p>Tawarruk sama dengan posisi duduk iftirasy, hanya saja di samping menetapi posisi iftirasy, mushali mengeluarkan kaki kirinya melalui arah bawah kaki kanannya dan menempelkan pantatnya ke lantai.</p>
+
+<p>Adapun makmum masbuq dan orang yang lupa, maka dia disunnahkan melakkan duduk iftirasy, tidak duduk tawarruk.</p>
+
+<p>Dan sunnah mengucapkan salam kedua. Adapun salam yang pertama, maka sudah dijelaskan bahwa sesungguhnya termasuk dari rukun-rukunnya sholat.</p>
+
+
+</p>
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Bacaan qunut yang sempurna sebagaimana disebut dalam Kifayatul Akhyar hal. 188 sebagai berikut:<br/>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+اَللّهُمَّ اهْدِنِي فِيْمَنْ هَدَيْتَ وَعَافِنِيْ فِيْمَنْ عَافَيْتَ وَتَوَلَّنِيْ فِيْمَنْ تَوَلَّيْتَ وَبَارِكْ لِيْ فِيْمَا أَعْطَيْتَ وَقِنِيْ شَرَّ مَا قَضَيْتَ فَإِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْك وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ
+</div></font>
+</p>
+<p><sub>2</sub>Lengkapnya bacaan Tawajjuh sebagaimana disebutkan dalam Tausyikh, Darul Minhaj, hal. 99-100 adalah:<br/>
+<div align="right"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">حَنِيْفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِيْنَ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّـهِ رَبِ الْعَالَمِيْنَ لَا شَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ
+</div></font>
+</p>
+
+
+
+</phr>
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="4.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 5</font>
+	</a>
+	
+	<a href="6.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>
